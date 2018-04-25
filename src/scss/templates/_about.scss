@@ -1,0 +1,43 @@
+.team-member .row {
+  align-items: flex-start;
+}
+
+.team-member__info {
+  @media (min-width: $tablet) {
+    padding-top: 50px;
+  }
+}
+
+.team-member__photo{
+  @include fluid-property(padding-left, 50, 150, $mobile, $tablet);
+  @include fluid-property(padding-right, 50, 150, $mobile, $tablet);
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+  img {
+    float: right;
+  }
+}
+
+.our-story__content {
+  @media (max-width: $tablet) {
+    padding-top: 0;
+  }
+}
+
+.team-member__title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: color('primary');
+  line-height: 1;
+}
+
+.team-member__name {
+  @extend h2;
+  margin-bottom: 0.4em;
+}
+
+.team-member__description {
+  font-size: 1.2em;
+  line-height: 1.7;
+}

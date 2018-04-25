@@ -1,0 +1,126 @@
+/**
+  * Forms
+  */
+
+////
+// Gravity Forms Styles
+//////
+.gform_wrapper#gform_wrapper_1 {
+  padding-top: 5em;
+}
+
+.gform_wrapper form[method="post"] {
+  width: 100%;
+  max-width: $page-hero-inner-width;
+  margin: 0 auto;
+}
+
+%input-style {
+  background: #eeeeee;
+  border: none;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  &:focus {
+    outline: none;
+  }
+}
+
+.gform_wrapper .gform_body {
+  // put everything in this scope to increase specificity
+  .gfield_label {
+    font-family: $font-primary;
+    font-size: 1.5em;
+  }
+
+  .gfield_required {
+    color: grey(1);
+  }
+
+  .field_sublabel_below .ginput_complex.ginput_container label {
+    // hide sublabels
+    display: none;
+  }
+
+  input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    // i dont like this but it's how gforms targets checkboxes
+    @extend %input-style;
+    height: 4em;
+  }
+
+  textarea.large {
+    @extend %input-style;
+  }
+
+  .gfield_label:empty {
+    display: none;
+  }
+
+  .bottom-checkbox {
+    margin-top: -12px;
+  }
+
+  input[type=checkbox] {
+    visibility: hidden; // replace standard checkbox with custom
+  }
+  .gfield_checkbox li label {
+    position: relative;
+    padding-left: 12px;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 1.1em;
+    max-width: 80%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      left: -18px;
+      background: white;
+      border: 2px solid black;
+    }
+    &:after {
+      content: '\2713'; //checkmark symbol
+      position: absolute;
+      left: -18px;
+      top: -5px;
+      font-size: 26px;
+      opacity: 0;
+
+    }
+  }
+
+  ul.gfield_checkbox li input[type=checkbox]:checked + label {
+    font-weight: 400; // by default gforms changes label to bold on :checked - let's not
+    // animate checkmark symbol in when checked
+    &:after {
+      opacity: 1;
+      animation: pop 0.2s linear 1;
+    }
+  }
+
+  @media only screen and (min-width: 641px) {
+    ul.gform_fields li.gfield {
+      padding-right: 0;
+    }
+  }
+} //.gform_wrapper .gform_body
+
+.gform_wrapper .gform_footer .button.gform_button {
+  @extend .btn;
+  @extend .btn--primary;
+  border: none;
+  padding-top: 1.1em !important;
+  padding-bottom: 1.1em !important;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+@keyframes pop {
+  50% {
+    transform: scale(1.5);
+  }
+}

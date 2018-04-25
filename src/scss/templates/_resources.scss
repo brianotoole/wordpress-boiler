@@ -1,0 +1,95 @@
+
+#resources {
+  padding-top: 80px;
+}
+
+.resource-tile {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 2.5em 4em;
+  box-shadow: 0 2px 12px rgba(black,0.2);
+  margin-bottom: 60px;
+  transition: background 0.15s;
+
+  hr {
+    border-color: color('accent');
+  }
+
+  &:hover {
+    background: color('primary');
+    transition: background 0.3s;
+    hr {
+      border-color: color('white');
+    }
+  }
+}
+
+.resource-tile__label {
+  color: color('primary');
+  font-size: 1.1em;
+  font-weight: 400;
+
+  .resource-tile:hover & {
+    color: darken(color('primary'),25%);
+  }
+}
+
+.resource-tile__heading {
+  text-transform: none;
+  letter-spacing: initial;
+  font-size: 2em;
+  line-height: 1.2;
+
+  .resource-tile:hover & {
+    color: white;
+  }
+}
+
+.resource-tile__description p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+
+  .resource-tile:hover & {
+    color: color('white');
+  }
+}
+
+.resource-tile__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.resource-tile__social {
+  $this_width: 34px;
+  margin-top: 1em;
+  display: inline-block;
+  width: $this_width;
+  height: $this_width;
+  margin-right: 1em;
+  position: relative;
+
+  a {
+    background: color('secondary');
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: $this_width;
+    border-radius: 50%;
+
+    .resource-tile:hover & {
+      background: white;
+      color: color('primary');
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

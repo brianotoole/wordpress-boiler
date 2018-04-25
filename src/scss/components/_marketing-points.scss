@@ -1,0 +1,77 @@
+/**
+  * Marketing Points Section
+  */
+
+.marketing-points {
+  margin-top: 4.5em;
+  margin-bottom: 2em;
+  line-height: 1.7;
+}
+
+.marketing-points__image-wrapper {
+  margin-bottom:  0.5em;
+  img { height: 100px; }
+}
+
+.marketing-points__heading {
+  font-size: 1.4em;
+  font-weight: bold;
+  .marketing-points--alt & {
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    position: relative;
+
+    .line {
+      content: '';
+      display:block;
+      position: absolute;
+      height: 3px;
+      width: 0%;
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+      top: 84px;
+      background: color('secondary');
+    }
+
+    &.is-first .line {
+      left: calc(50% + 16px);
+    }
+
+    &.is-middle .line {
+      left: calc(50% + 16px);
+      @media (max-width: $tablet) {
+        left: -10%;
+        width: 120%;
+      }
+    }
+
+    &.is-last .line {
+      display: none;
+      right: calc(50% + 16px);
+      @media (max-width: $tablet) {
+        display: block;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 33px;
+      width: 33px;
+      background: color('secondary');
+      border-radius: 50%;
+      margin: 14px auto 21px;
+    }
+  }
+}
+
+.marketing-points__description {
+  font-size: 1.1em;
+}
+
+.marketing-points__subheading {
+  font-weight: bold;
+  font-size: 1.3em;
+}

@@ -1,0 +1,76 @@
+.mobile-menu-toggle {
+  cursor: pointer;
+}
+
+@media (max-width: $tablet) {
+  .mobile-menu-toggle,
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu-toggle {
+    justify-content: flex-end;
+  }
+
+  .logo {
+    justify-content: flex-start;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  z-index: 10;
+  background: rgba(color('tertiary'),0.97);
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: width 0.3s;
+
+  &.is-active {
+    width: 100%;
+    transition: width 0.4s;
+  }
+}
+
+.mobile-menu ul {
+  margin-left: 2em;
+  margin-top: 3.75em;
+  line-height: 2.5;
+  min-width: 400px;
+}
+
+.mobile-menu a {
+  display: block;
+  color: white;
+  font-size: 1.75em;
+  font-weight: normal;
+
+  &:hover {
+    color: white;
+    opacity: 0.7;
+  }
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  background: url($menu-close);
+  background-size: contain;
+  z-index: 11;
+  opacity:0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+
+  .mobile-menu.is-active & {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+}
+
+

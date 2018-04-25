@@ -1,0 +1,49 @@
+/**
+  * UTILITY CLASSES
+  */
+
+.u-visible-desktop {
+  display: none;
+  @media (min-width: $desktop) { display: block; }
+}
+
+.u-hidden-desktop {
+  @media (min-width: $desktop) { display: none; }
+}
+
+.u-hidden-sm {
+  @media (max-width: $tablet) { display: none !important; }
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-larger {
+  font-size: 1.2em !important;
+  line-height: 1.7;
+}
+
+.u-color-white {
+  color: #ffffff !important;
+}
+
+.u-color-primary {
+  color: color('primary') !important;
+}
+
+.u-color-link {
+  color: color('secondary') !important;
+}
+
+.u-color-secondary {
+  color: color('secondary') !important;
+}
+
+.bg-tertiary {
+  background-color: color('tertiary');
+}

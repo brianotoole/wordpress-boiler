@@ -1,0 +1,59 @@
+/**
+  * Buttons
+  */
+
+.btn {
+  background: grey(4);
+  display: inline-block;
+  padding: 0.9em;
+  padding-bottom: 0.7em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  min-width: 12.5em;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  &:hover, &:focus, &:visited {
+    color: white;
+  }
+}
+
+.btn--large {
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  width: 100%;
+  max-width: 250px;
+}
+
+.btn--primary {
+  background: color('primary');
+  color: white;
+  transition: 0.1s;
+
+  &:hover,
+  &:visited:hover {
+    color: white;
+    background: darken(color('primary'), 7%);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+.btn--outline {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  transition: 0.1s;
+
+  &:visited { color: white; }
+
+  &:hover {
+    background: white;
+    transition: 0.2s;
+  }
+
+  &.bg-ref--secondary:hover { color: color('secondary'); }
+
+  &.bg-ref--tertiary:hover { color: color('tertiary'); }
+}
+

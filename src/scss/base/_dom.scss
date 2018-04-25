@@ -1,0 +1,31 @@
+html {
+  background-color: white;
+  font-size: $font-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+   &.nav-open, &.nav-open #page {
+    overflow-y: hidden;
+  }
+}
+
+body {
+  color: grey(1);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: $font-primary;
+  overflow-x: hidden;
+
+}
+
+#page {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+}

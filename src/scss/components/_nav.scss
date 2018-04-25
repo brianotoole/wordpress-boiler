@@ -1,0 +1,28 @@
+/**
+  * Navigation
+  */
+.nav {
+  ul {
+    display: table;
+    margin: 0 0 0 auto;
+  }
+
+  li {
+    display: table-cell;
+    padding-left: 2.3em;
+  }
+}
+
+.login-btn {
+  text-align: right;
+  color: grey('base');
+  margin-bottom: 12px;
+}
+
+.nav-wrapper {
+}
+
+.menu-button a {
+  @extend .btn;
+  @extend .btn--primary;
+}

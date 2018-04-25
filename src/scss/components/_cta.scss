@@ -1,0 +1,13 @@
+.cta {
+  text-align: center;
+  color: color('white');
+//  padding: 4.5em 0;
+  @include fluid-property(padding-top, 30, 60);
+  @include fluid-property(padding-bottom, 40, 70);
+  background: grey('base');
+
+  h2 {
+    margin-bottom: 0.7em;
+    text-transform: uppercase;
+  }
+}

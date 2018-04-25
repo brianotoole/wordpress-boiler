@@ -1,0 +1,53 @@
+.carousel {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.carousel__slide {
+  padding: 0 30px;
+  @media (max-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.slick-prev, .slick-next {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  padding: 0;
+
+  &:before {
+    visibility: visible;
+    content: '';
+    height: 60px;
+    width: 40px;
+    @media (max-width: $tablet) {
+      height: 30px;
+      width: 20px;
+    }
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+
+.slick-prev:before {
+  background-image: url($chevron-left);
+  left: -50px;
+  @media (max-width: $tablet) {
+    left: -20px
+  }
+}
+
+.slick-next:before {
+  background-image: url($chevron-right);
+  right: -50px;
+    @media (max-width: $tablet) {
+    right: -20px
+  }
+}
+

@@ -1,0 +1,71 @@
+/**
+  * Typography
+  */
+a {
+  color: grey(1);
+  cursor: pointer;
+  text-decoration: none;
+
+  strong { color: currentColor; }
+
+  &:hover, &:focus,
+  &:visited, &:visited:hover {
+    color: lighten(grey(1), 10%);
+  }
+}
+
+p, .p {
+  margin-bottom: 1.4em;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+
+h1, .h1 { font-size: 2em; }
+
+h2,.h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h3, .h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.hr--small {
+  width: 60px;
+  border: 1px solid white;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}
+
+.hr--left { margin-left: 0; }
+
+.hr--primary { border-color: color('primary'); }
+
+.hr--secondary { border-color: color('secondary'); }
+
+.hr--accent { border-color: color('accent'); }
+
+.section-title {
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+}
+
+.section-subtitle { font-size: 1.5em; }
+
+.intro-text { font-size: 1.2em; }
+
+address {
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.address-contact {
+  line-height: 1.8;
+  font-size: 1.3em;
+}

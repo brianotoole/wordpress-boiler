@@ -1,0 +1,51 @@
+/**
+  * Footer
+  */
+
+.footer {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.footer__logo {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto 1.5em;
+}
+
+.footer__info {
+  margin-bottom: 0.5em;
+  word-wrap: break-word;
+}
+
+.footer__info span {
+  @media (max-width: $tablet) {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+}
+
+.sparxoo-credit {
+  @media (max-width: $tablet) {
+    font-size: 0.8em;
+    margin-top: 2em;
+  }
+}
+
+
+.footer__images {
+  display: flex;
+  justify-content:  center;
+  align-items:  center;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.footer-image {
+  padding: 0.5em 1em;
+
+  img {
+    max-height: 100px;
+  }
+}
