@@ -1,3 +1,3 @@
-require('./events.js');
+//require('./events.js');
 require('./nav.js');
-require('./social-sharing.js');
+//require('./social-sharing.js');
