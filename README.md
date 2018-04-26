@@ -84,3 +84,9 @@ will use the data based on current browser popularity and property support to au
 
 3. [BrowserSync](https://www.npmjs.com/package/browser-sync-webpack-plugin): 
 This boiler is using BrowserSync to serve the project and Webpack Dev Server is not needed. The setup is pretty easy: just pass the BrowserSync options to the plugin as the first argument within the `webpack.config.js` file.
+
+## TODO
+- [ ] Include basic ACF data (options panel data)
+- [ ] Include base icon set (font icon? other?)
+- [ ] Create a better production build script: on run-script 'build prod', compress images + min assets, etc.
+- [ ] Add modernizr / setup basic fallback classes for IE
