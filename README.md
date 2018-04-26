@@ -14,7 +14,7 @@ To use everything this theme ships with, you need the following installed on you
 ``` bash
 git clone https://github.com/brianotoole/bem-wordpack-boiler.git && cd bem-wordpack-boiler && npm i
 ```
-4. Change the name of the theme folder and package.json to match your project's name
+4. *(optional)* Change the name of the theme folder and package.json to match your project's name
 5. Change proxy location for BrowserSync. Open `webpack.config.js` file and change the proxy location for BrowserSync to work:
 
 Change proxy location to match the name of your wordpress installation folder: "localhost/bem-wordpack-boiler"
