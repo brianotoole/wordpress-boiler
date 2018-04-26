@@ -1,4 +1,6 @@
-// MAIN.SCSS == table of contents
+/*********************************************************
+    Main.scss == Table of Contents
+*********************************************************/
 
 /**
   * -- BASE
@@ -22,12 +24,11 @@
   * -- COMPONENTS
   */
 @import 'components/nav';
+@import 'components/mobile-menu';
 @import 'components/button';
 @import 'components/hero';
-@import 'components/marketing-points';
 @import 'components/cta';
 @import 'components/carousel';
-@import 'components/mobile-menu';
 @import 'components/form';
 
 /**

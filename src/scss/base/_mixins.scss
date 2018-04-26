@@ -1,3 +1,36 @@
+/*********************************************************
+    Media Query Breakpoints
+    Mobile first approach
+    Default rules are set below sm-sized screens
+    Usage:
+    @include bp_md {
+      width: 50%;
+    }
+*********************************************************/
+
+// above bp_sm
+@mixin bp_sm {
+  @media (min-width: #{$bp_sm}) {
+    @content;
+  }
+}
+
+// above bp_md
+@mixin bp_md {
+  @media (min-width: #{$bp_md}) {
+    @content;
+  }
+}
+
+// above bp_lg
+@mixin bp_lg {
+  @media (min-width: #{$bp_lg}) {
+    @content;
+  }
+}
+
+
+
 // Make a property fluidly responsive by using calc and viewport units.
 @mixin fluid-property($property, $min:20, $max:30, $start: $phone, $end: $desktop, $clip: true, $clipAtStart: true, $clipAtEnd: true) {
   $start: $start / ($start * 0 + 1);
