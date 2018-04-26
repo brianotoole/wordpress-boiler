@@ -8,27 +8,27 @@ To use everything this theme ships with, you need the following installed on you
 * NPM installed globally on machine
 
 ## Installation
-#####1. Install a fresh WordPress installation (setup database + follow generic WP install steps)
-#####2. Using terminal, navigate (cd into) the fresh WordPress installation's `wp-content/themes` folder
-#####3. Clone the theme repository, by running the following:
+1. Install a fresh WordPress installation (setup database + follow generic WP install steps)
+2. Using terminal, navigate (cd into) the fresh WordPress installation's `wp-content/themes` folder
+3. Clone the theme repository, by running the following:
 ``` bash
 git clone https://github.com/brianotoole/bem-wordpack-boiler.git
 cd bem-webpack-boiler
 ```
-#####4A. Navigate (cd into) the theme's foldername
+4A. Navigate (cd into) the theme's foldername
 ``` bash
 cd wordpack-boiler 
 ```
-#####4B. *Optional* Change the name of the theme folder to match your project's name
+4B. *Optional* Change the name of the theme folder to match your project's name
 
-#####5. Change proxy location for BrowserSync. Open `webpack.config.js` file and change the proxy location for BrowserSync to work:
+5. Change proxy location for BrowserSync. Open `webpack.config.js` file and change the proxy location for BrowserSync to work:
 
 Change proxy location to match the name of your wordpress installation folder: "localhost/bem-wordpack-boiler"
 ``` bash
 proxy: 'localhost/Your-New-Site-Name', 
 ```
 
-#####6. Start server for development
+6. Start server for development
 The boilerplate comes preset with css/js file inclusions, base meta settings, and a basic semantic body with a few modules to get you started. However, to make full use of the site-start though, you'll want to use Webpack.
 
 ``` bash
