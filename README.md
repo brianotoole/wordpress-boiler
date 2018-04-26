@@ -37,7 +37,7 @@ npm run dev
 This will open up a browser window with local site and watch for file changes. Ex - http://localhost:3000/bem-wordpack-boiler
 
 ### Build files for production
-When you're ready to minify production files, run the following in the site's root:
+When you're ready to minify production files, run the following in the theme's root:
 ``` bash
 npm run build
 ```
