@@ -13,13 +13,12 @@ To use everything this theme ships with, you need the following installed on you
 3. Clone the theme repository, by running the following:
 ``` bash
 git clone https://github.com/brianotoole/bem-wordpack-boiler.git
-cd bem-webpack-boiler
 ```
 4A. Navigate (cd into) the theme's foldername
 ``` bash
-cd wordpack-boiler 
+cd bem-wordpack-boiler 
 ```
-4B. *Optional* Change the name of the theme folder to match your project's name
+4B. Change the name of the theme folder and package.json to match your project's name
 
 5. Change proxy location for BrowserSync. Open `webpack.config.js` file and change the proxy location for BrowserSync to work:
 
