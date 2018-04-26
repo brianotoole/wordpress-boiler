@@ -5,12 +5,12 @@
 /**
   * -- BASE
   */
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/dom';
-@import 'base/typography';
-@import 'base/utility';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/reset';
+@import 'global/dom';
+@import 'global/typography';
+@import 'global/utility';
 
 /**
   * -- LAYOUT
