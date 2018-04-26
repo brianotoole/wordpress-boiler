@@ -3,7 +3,7 @@
 *********************************************************/
 
 // Make a property fluidly responsive by using calc and viewport units.
-@mixin fluid-property($property, $min:20, $max:30, $start: $phone, $end: $desktop, $clip: true, $clipAtStart: true, $clipAtEnd: true) {
+@mixin fluid-property($property, $min:20, $max:30, $start: 480px, $end: 1200px, $clip: true, $clipAtStart: true, $clipAtEnd: true) {
   $start: $start / ($start * 0 + 1);
   $end: $end / ($end * 0 + 1);
   $multiplier: ($max - $min) / ($end - $start) * 100;
@@ -29,5 +29,5 @@
 
 // Viewport based responsive text
 @mixin fluid-text($min:20, $max:30, $start: $phone, $end: $desktop) {
-  @include fluid-prop(font-size, $min, $max, $start, $end);
+  @include fluid-property(font-size, $min, $max, $start, $end);
 }
