@@ -5,7 +5,7 @@ A Wordpress them boilerplate that follows BEM methodology and organizes assets u
 To use everything this theme ships with, you need the following installed on your machine:
 
 * Wordpress 4.9 or higher (requires PHP & MySQL)
-* NPM installed globally on machine
+* NPM & Webpack installed globally on machine
 
 ## Installation
 1. Install a fresh WordPress installation (setup database + follow generic WP install steps)
