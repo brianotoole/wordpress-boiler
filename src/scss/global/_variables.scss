@@ -3,29 +3,29 @@
 ////
 
 // color names
-$green: #b2d357;
-$blue:  #00ace4;
-$gold:  #fdbf29;
-$navy:  #192f5a;
-$white: #ffffff;
-$black: #111111;
-$grey:  #757575;
+$green:  #b2d357;
+$blue:   #00ace4;
+$gold:   #fdbf29;
+$navy:   #192f5a;
+$white:  #ffffff;
+$black:  #111111;
+$grey:   #757575;
 
 // brand colors
 $color__primary:    $green;
-$color__secondary:  $blue;
-$color__tertiary:   $navy;
-$color__accent:     $gold;
+$color__secondary:   $blue;
+$color__tertiary:    $navy;
+$color__accent:      $gold;
 $color__text:       $black;
 
 // fonts
 $font__heading: 'Poppins', Arial, sans-serif;
-$font__body: 'Open Sans', Arial, sans-serif;
+$font__body:    'Poppins', Arial, sans-serif;
 $font-size: 16px;
 
 // breakpoints
-$desktop-wide: 1200px;
-$desktop:      920px;
-$tablet:       768px;
-$mobile:       480px;
+$desktop-wide:  1200px;
+$desktop:        920px;
+$tablet:         768px;
+$mobile:         480px;
 $phone:        $mobile;
