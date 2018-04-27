@@ -27,7 +27,7 @@
   height: 100%;
   width: 0%;
   z-index: 10;
-  background: rgba(color('tertiary'),0.97);
+  background: rgba($color__tertiary,0.97);
   top: 0;
   right: 0;
   overflow: hidden;
@@ -64,7 +64,7 @@
   right: 2rem;
   width: 40px;
   height: 40px;
-  background: url($menu-close);
+  background: url('');
   background-size: contain;
   z-index: 11;
   opacity:0;

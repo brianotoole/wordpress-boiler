@@ -34,17 +34,17 @@
 }
 
 .u-color-primary {
-  color: color('primary') !important;
+  color: $color__primary !important;
 }
 
 .u-color-link {
-  color: color('secondary') !important;
+  color: $color__secondary !important;
 }
 
 .u-color-secondary {
-  color: color('secondary') !important;
+  color: $color__secondary !important;
 }
 
 .bg-tertiary {
-  background-color: color('tertiary');
+  background-color: $color__tertiary;
 }

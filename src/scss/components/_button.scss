@@ -26,14 +26,14 @@
 }
 
 .btn--primary {
-  background: color('primary');
+  background: $color__primary;
   color: white;
   transition: 0.1s;
 
   &:hover,
   &:visited:hover {
     color: white;
-    background: darken(color('primary'), 7%);
+    background: darken($color__primary, 7%);
     transition: 0.3s;
     cursor: pointer;
   }
@@ -52,8 +52,8 @@
     transition: 0.2s;
   }
 
-  &.bg-ref--secondary:hover { color: color('secondary'); }
+  &.bg-ref--secondary:hover { color: $color__secondary; }
 
-  &.bg-ref--tertiary:hover { color: color('tertiary'); }
+  &.bg-ref--tertiary:hover { color: $color__tertiary; }
 }
 

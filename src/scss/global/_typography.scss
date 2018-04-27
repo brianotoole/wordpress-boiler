@@ -46,11 +46,11 @@ h3, .h3 {
 
 .hr--left { margin-left: 0; }
 
-.hr--primary { border-color: color('primary'); }
+.hr--primary { border-color: $color__primary; }
 
-.hr--secondary { border-color: color('secondary'); }
+.hr--secondary { border-color: $color__secondary; }
 
-.hr--accent { border-color: color('accent'); }
+.hr--accent { border-color: $color__accent; }
 
 .section-title {
   font-size: 2.5em;

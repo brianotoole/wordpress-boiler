@@ -29,7 +29,7 @@ $hero-width: 780px;
   top: 45px;
   height: $hero-height - 90px;
   width: $hero-width;
-  border: 3px solid color('primary');
+  border: 3px solid $color__primary;
   z-index: 2;
 }
 
@@ -45,7 +45,7 @@ $hero-width: 780px;
 .cta-box {
   width: 100%;
   max-width: 566px;
-  background: color('secondary');
+  background: $color__secondary;
   position: relative;
   z-index: 4;
   top: 95px;
@@ -106,8 +106,8 @@ $page-hero-inner-width: 665px;
   position: relative;
   z-index: 2;
   padding: 2.5em;
- background: color('secondary');
-  @media (max-width: $tablet) { background: rgba(color('secondary'),0.9); }
+ background: $color__secondary;
+  @media (max-width: $tablet) { background: rgba($color__secondary,0.9); }
   color: white;
   text-align: center;
   width: 100%;
@@ -127,7 +127,7 @@ $page-hero-inner-width: 665px;
   max-width: 739px;
   height: 100%;
   position: absolute;
-  border: 2px solid color('primary');
+  border: 2px solid $color__primary;
   left: 0;
   right: 0;
   top: -50px;

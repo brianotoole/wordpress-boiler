@@ -11,7 +11,7 @@
 }
 
 .section--secondary {
-  background: color('secondary');
+  background: $color__secondary;
   color: white;
 
   &.section--offset-image {
@@ -26,8 +26,8 @@
       top: 0;
       height: 100%;
       width: 100%;
-      background: color('secondary');
-      @media (min-width: bp('desktop')) {
+      background: $color__secondary;
+      @media (min-width: $desktop) {
         left: -20%;
       }
     }
@@ -47,7 +47,7 @@
     .section__shape {
       height: 400px;
       width: 400px;
-      border: 3px solid color('primary');
+      border: 3px solid $color__primary;
       position: absolute;
       top: -30px;
       right: -30px;
@@ -66,7 +66,7 @@
 }
 
 .section--tertiary {
-  background: color('tertiary');
+  background: $color__tertiary;
   color: white;
 }
 

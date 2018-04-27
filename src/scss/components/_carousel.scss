@@ -40,7 +40,7 @@
 }
 
 .slick-prev:before {
-  background-image: url($chevron-left);
+  background-image: url('');
   left: -50px;
   @media (max-width: $tablet) {
     left: -20px
@@ -48,7 +48,7 @@
 }
 
 .slick-next:before {
-  background-image: url($chevron-right);
+  background-image: url('');
   right: -50px;
     @media (max-width: $tablet) {
     right: -20px
