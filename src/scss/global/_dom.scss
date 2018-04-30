@@ -13,9 +13,6 @@ html {
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
-   &.nav-open, &.nav-open #page {
-    overflow-y: hidden;
-  }
 }
 
 body {
@@ -25,7 +22,6 @@ body {
   line-height: 1.5;
   font-family: $font__body;
   overflow-x: hidden;
-
 }
 
 #page {
