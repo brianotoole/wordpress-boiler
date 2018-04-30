@@ -9,7 +9,7 @@
     "build": "webpack -p --progress --hide-modules"
   },
   "keywords": [],
-  "author": "Brian OToole",
+  "author": "Travis Wagner, Brian OToole",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.3.0",
