@@ -715,13 +715,6 @@ address {
 /**
   * Header
   */
-.logo {
-  max-width: 230px;
-  display: flex; }
-  .logo img {
-    height: 100%;
-    width: 100%; }
-
 .header {
   font-size: 1em; }
 
@@ -731,6 +724,9 @@ address {
   @media (max-width: 768px) {
     .header__inner {
       padding-bottom: 1.5em; } }
+
+.logo {
+  max-width: 230px; }
 
 /**
   * Footer
