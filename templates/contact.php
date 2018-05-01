@@ -4,10 +4,6 @@
 
 <?php get_template_part('template-parts/section', 'page-hero'); ?>
 
-<div class="container form-wrapper">
-  <?php get_template_part('template-parts/loop', 'content'); ?>
-</div>
-
 <section class="section" id="Contact_our_location">
   <div class="container u-text-center">
     <h2>OUR LOCATION</h2>

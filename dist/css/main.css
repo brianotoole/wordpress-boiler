@@ -816,121 +816,14 @@ address {
 /**
   * Hero
   */
-.hero--home {
-  margin-bottom: -150px; }
-
-.hero__inner {
-  position: relative;
-  height: 791px;
-  width: 100%; }
-
-.hero__image-wrapper {
-  position: absolute;
-  right: 0;
-  z-index: 1; }
-
-.hero__shape {
-  position: absolute;
-  right: 45px;
-  top: 45px;
-  height: 551px;
-  width: 780px;
-  border: 3px solid #b2d357;
-  z-index: 2; }
-
-.hero__image {
-  position: relative;
-  z-index: 3;
-  height: 641px;
-  width: 780px;
-  background-size: cover;
-  background-position: center; }
-
-.cta-box {
-  width: 100%;
-  max-width: 566px;
-  background: #00ace4;
-  position: relative;
-  z-index: 4;
-  top: 95px;
-  color: white;
-  padding: 35px;
-  padding: calc(6.81818vw + -12.72727px); }
-  @media (max-width: 480px) {
-    .cta-box {
-      padding: 35px;
-      padding: 20px; } }
-  @media (min-width: 920px) {
-    .cta-box {
-      padding: 35px;
-      padding: 50px; } }
-
-.cta__heading {
-  font-size: 2.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 1.2em; }
-
-.cta__description p {
-  font-weight: normal;
-  font-size: 1.2em; }
+.hero {
+  color: #ffffff; }
 
 /**
   * Page Hero
   */
-.page-hero {
-  position: relative;
-  margin-bottom: 90px; }
-
-.page-hero__bg {
-  height: 245px;
-  width: 100%;
-  background: url("https://placeimg.com/1000/245/tech");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1; }
-
-.page-hero__lead {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -90px; }
-  @media (max-width: 768px) {
-    .page-hero__lead {
-      bottom: initial;
-      position: relative;
-      margin-bottom: -85px; } }
-
-.page-hero__lead-inner {
-  position: relative;
-  z-index: 2;
-  padding: 2.5em;
-  background: #00ace4;
-  color: white;
-  text-align: center;
-  width: 100%;
-  max-width: 665px;
-  margin: 0 auto;
-  margin-top: -163.33333px; }
-  @media (max-width: 768px) {
-    .page-hero__lead-inner {
-      background: rgba(0, 172, 228, 0.9); } }
-  .page-hero__lead-inner p, .page-hero__lead-inner .p {
-    font-size: 1.65em;
-    width: 100%;
-    margin: 0 auto; }
-
-.page-hero__shape {
-  width: 100%;
-  max-width: 739px;
-  height: 100%;
-  position: absolute;
-  border: 2px solid #b2d357;
-  left: 0;
-  right: 0;
-  top: -50px;
-  margin: 0 auto; }
+.hero--page {
+  color: #b2d357; }
 
 /**
   * CTA
@@ -1022,7 +915,7 @@ address {
 
 .gform_wrapper form[method="post"] {
   width: 100%;
-  max-width: 665px;
+  max-width: 500px;
   margin: 0 auto; }
 
 .gform_wrapper .gform_body input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper .gform_body textarea.large {

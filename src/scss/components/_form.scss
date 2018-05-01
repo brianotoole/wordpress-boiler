@@ -9,7 +9,7 @@
 
 .gform_wrapper form[method="post"] {
   width: 100%;
-  max-width: $page-hero-inner-width;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -115,7 +115,6 @@
     outline: none;
   }
 }
-
 
 @keyframes pop {
   50% {
