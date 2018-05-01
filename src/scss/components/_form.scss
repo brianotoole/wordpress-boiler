@@ -1,10 +1,8 @@
-/*********************************************************
-    Forms
-*********************************************************/
+/**
+  * Forms
+  * @NOTE: uses Gravity Forms
+  */
 
-////
-// Gravity Forms Styles
-//////
 .gform_wrapper#gform_wrapper_1 {
   padding-top: 5em;
 }
@@ -33,7 +31,7 @@
   }
 
   .gfield_required {
-    color: grey(1);
+    color: $grey;
   }
 
   .field_sublabel_below .ginput_complex.ginput_container label {

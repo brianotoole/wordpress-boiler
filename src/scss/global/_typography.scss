@@ -1,9 +1,9 @@
-/*********************************************************
-    Typography
-*********************************************************/
+/**
+  * Typography
+  */
 
 a {
-  color: grey(1);
+  color: $grey;
   cursor: pointer;
   text-decoration: none;
 
@@ -11,12 +11,12 @@ a {
 
   &:hover, &:focus,
   &:visited, &:visited:hover {
-    color: lighten(grey(1), 10%);
+    color: lighten($grey, 10%);
   }
 }
 
 p, .p {
-  margin-bottom: 1.4em; // margin-bottom to more easily align elements to the top
+  margin-bottom: 1.4em;
   text-transform: none;
   letter-spacing: normal;
 }

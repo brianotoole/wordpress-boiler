@@ -1,6 +1,6 @@
-/*********************************************************
-    Base DOM Elements
-*********************************************************/
+/**
+  * Base DOM Styling
+  */
 
 html {
   background-color: white;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  color: grey(1);
+  color: $grey;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;

@@ -1,5 +1,5 @@
 /*********************************************************
-    Main.scss == Table of Contents
+  Main.scss == Table of Contents
 *********************************************************/
 
 /**
@@ -24,7 +24,6 @@
   * -- COMPONENTS
   */
 @import 'components/nav';
-@import 'components/mobile-menu';
 @import 'components/button';
 @import 'components/hero';
 @import 'components/cta';
@@ -34,6 +33,4 @@
 /**
   * -- TEMPLATES
   */
-@import 'templates/solutions-overview';
 @import 'templates/about';
-@import 'templates/resources';
