@@ -1,6 +1,6 @@
-/*********************************************************
-    Base DOM Elements
-*********************************************************/
+/**
+  * Base DOM Styling
+  */
 
 html {
   background-color: white;
@@ -13,19 +13,15 @@ html {
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
-   &.nav-open, &.nav-open #page {
-    overflow-y: hidden;
-  }
 }
 
 body {
-  color: grey(1);
+  color: $grey;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
   font-family: $font__body;
   overflow-x: hidden;
-
 }
 
 #page {

@@ -1,9 +1,9 @@
-/*********************************************************
-    Typography
-*********************************************************/
+/**
+  * Typography
+  */
 
 a {
-  color: grey(1);
+  color: $grey;
   cursor: pointer;
   text-decoration: none;
 
@@ -11,7 +11,7 @@ a {
 
   &:hover, &:focus,
   &:visited, &:visited:hover {
-    color: lighten(grey(1), 10%);
+    color: lighten($grey, 10%);
   }
 }
 
@@ -27,8 +27,6 @@ h1, .h1 { font-size: 2em; }
 
 h2,.h2 {
   font-size: 2.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 h3, .h3 {
@@ -37,36 +35,7 @@ h3, .h3 {
   margin-bottom: 0.7em;
 }
 
-.hr--small {
-  width: 60px;
-  border: 1px solid white;
-  margin-top: 1em;
-  margin-bottom: 1.2em;
-}
-
-.hr--left { margin-left: 0; }
-
-.hr--primary { border-color: $color__primary; }
-
-.hr--secondary { border-color: $color__secondary; }
-
-.hr--accent { border-color: $color__accent; }
-
-.section-title {
-  font-size: 2.5em;
-  letter-spacing: 0.1em;
-}
-
-.section-subtitle { font-size: 1.5em; }
-
-.intro-text { font-size: 1.2em; }
-
 address {
   line-height: 1.5;
   font-style: normal;
-}
-
-.address-contact {
-  line-height: 1.8;
-  font-size: 1.3em;
 }

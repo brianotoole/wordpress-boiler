@@ -1,17 +1,15 @@
-/*********************************************************
-    Forms
-*********************************************************/
+/**
+  * Forms
+  * @NOTE: uses Gravity Forms
+  */
 
-////
-// Gravity Forms Styles
-//////
 .gform_wrapper#gform_wrapper_1 {
   padding-top: 5em;
 }
 
 .gform_wrapper form[method="post"] {
   width: 100%;
-  max-width: $page-hero-inner-width;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -33,7 +31,7 @@
   }
 
   .gfield_required {
-    color: grey(1);
+    color: $grey;
   }
 
   .field_sublabel_below .ginput_complex.ginput_container label {
@@ -117,7 +115,6 @@
     outline: none;
   }
 }
-
 
 @keyframes pop {
   50% {

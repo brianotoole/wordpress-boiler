@@ -1,18 +1,18 @@
-/*********************************************************
-    Buttons
-*********************************************************/
+/**
+  * Button
+  */
 
 .btn {
-  background: grey(4);
   display: inline-block;
-  padding: 0.9em;
-  padding-bottom: 0.7em;
+  padding: 0.9em 0.9em 0.7em;
+  background: $grey;
   text-align: center;
   letter-spacing: 0.1em;
   font-weight: bold;
-  min-width: 12.5em;
+  min-width: 230px;
   font-size: 0.85em;
   text-transform: uppercase;
+
   &:hover, &:focus, &:visited {
     color: white;
   }
@@ -51,9 +51,5 @@
     background: white;
     transition: 0.2s;
   }
-
-  &.bg-ref--secondary:hover { color: $color__secondary; }
-
-  &.bg-ref--tertiary:hover { color: $color__tertiary; }
 }
 

@@ -1,14 +1,13 @@
-/*********************************************************
-    Carousel
-*********************************************************/
+/**
+  * CTA
+  */
 
 .cta {
   text-align: center;
   color: $white;
-//  padding: 4.5em 0;
   @include fluid-property(padding-top, 30, 60);
   @include fluid-property(padding-bottom, 40, 70);
-  background: grey('base');
+  background: $grey;
 
   h2 {
     margin-bottom: 0.7em;
