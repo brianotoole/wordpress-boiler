@@ -10,12 +10,17 @@
   display: none;
   @media (min-width: $desktop) { display: block; }
 }
-
+.u-visible-tablet {
+  display: none;
+  @media (min-width: $tablet) { display: block; }
+}
 .u-hidden-desktop {
   @media (min-width: $desktop) { display: none; }
 }
-
-.u-hidden-sm {
+.u-hidden-tablet {
+  @media (min-width: $tablet) { display: none; }
+}
+.u-hidden-phone {
   @media (max-width: $tablet) { display: none !important; }
 }
 
@@ -33,7 +38,6 @@
 /**
   * Text Colors
   */
-
 .u-color-white {
   color: $color__white;
 }
