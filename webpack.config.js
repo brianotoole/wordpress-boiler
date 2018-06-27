@@ -42,7 +42,7 @@ var config = {
       host: 'localhost',
       port: 3000,
       // @NOTE: make sure this proxy matches the folder name of your wordpress installation
-      proxy: 'http://localhost/bem-wordpack-boiler',
+      proxy: 'http://localhost/wordpress-boiler',
       files: ['**/*.php'],
       ghostMode: {
         clicks: false,
