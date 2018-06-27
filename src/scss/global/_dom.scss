@@ -1,6 +1,6 @@
-/**
-  * Base DOM Styling
-  */
+/*********************************************************
+  Base DOM Styling
+*********************************************************/
 
 html {
   background-color: white;
@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-#page {
+#page { // global WP page wrapper
   position: absolute;
   width: 100%;
   overflow-x: hidden;

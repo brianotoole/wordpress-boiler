@@ -4,9 +4,10 @@
 *********************************************************/
 
 // generic color names
-$green:      #b2d357;
+$green:      #4bb14b;
 $blue:       #00ace4;
 $gold:       #fdbf29;
+$red:        #cb2431;
 $navy:       #192f5a;
 $white:      #ffffff;
 $black:      #111111;
@@ -20,6 +21,11 @@ $color__secondary:   $blue;
 $color__tertiary:    $navy;
 $color__accent:      $gold;
 $color__text:       $black;
+$color__white:      $white;
+
+// utility colors
+$color__error:        $red;
+$color__success:    $green;  
 
 // shades
 $color__primary--dark: darken($color__primary, 7%);

@@ -27,15 +27,15 @@
     padding: rem(16) rem(18);
     font-family: inherit;
     font-size: 1rem;
-    color: $color-body;
-    border: 1px solid $color-border-base;
+    color: $color__text;
+    border: 1px solid $color__border;
     border-radius: 0;
     outline: none;
     transition: 0.2s all ease-out;
   
     &:focus,
     &:active {
-      border-color: $color-primary;
+      border-color: $color__secondary;
     }
   }
   
@@ -45,7 +45,7 @@
   
   .form {
     &__btn-container {
-      @include bp_md {
+      @media (min-width: $tablet) {
         float: right;
       }
     }
@@ -54,35 +54,35 @@
   .form {
     &__input {
       &--success {
-        border-color: $color-success!important;
+        border-color: $color__success!important;
       }
   
       &--error {
-        border-color: $color-error!important;
+        border-color: $color__error!important;
       }
     }
   }
   
-  // placeholders
+  // placeholder text
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: $color-body;
-    font-size: rem(14);
+    color: $color__text;
+    font-size: rem(16);
   }
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-     color: $color-body;
-     font-size: rem(14);
+     color: $color__text;
+     font-size: rem(16);
      opacity: 1;
   }
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-     color: $color-body;
-     font-size: rem(14);
+     color: $color__text;
+     font-size: rem(16);
      opacity:  1;
   }
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-     color: $color-body;
-     font-size: rem(14);
+     color: $color__text;
+     font-size: rem(16);
   }
   ::-ms-input-placeholder { /* Microsoft Edge */
-     color: $color-body;
-     font-size: rem(14);
+     color: $color__text;
+     font-size: rem(16);
   }
