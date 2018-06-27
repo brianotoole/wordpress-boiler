@@ -1,8 +1,12 @@
-///
-// Mixins
-////
+/*********************************************************
+  Mixins
+*********************************************************/
 
-// Make a property fluidly responsive by using calc and viewport units.
+/**
+  * Fluid Property
+  * Make a property fluidly responsive by using calc and viewport units.
+  * USAGE: @include fluid-property(height, 200, 400)
+  */
 @mixin fluid-property($property, $min:20, $max:30, $start: 480px, $end: 1200px, $clip: true, $clipAtStart: true, $clipAtEnd: true) {
   $start: $start / ($start * 0 + 1);
   $end: $end / ($end * 0 + 1);
@@ -27,7 +31,11 @@
   #{$property}: $formula;
 }
 
-// Viewport based responsive text
-@mixin fluid-text($min:20, $max:30, $start: $phone, $end: $desktop) {
+/**
+  * Fluid Text
+  * Make font-size property fluidly responsive by using calc and viewport units.
+  * USAGE: @include fluid-text(20, 40)
+  */
+@mixin fluid-text($min:20, $max:30, $start: 480, $end: 1200) {
   @include fluid-property(font-size, $min, $max, $start, $end);
 }
