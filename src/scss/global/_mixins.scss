@@ -2,6 +2,22 @@
   Mixins
 *********************************************************/
 
+
+/**
+  * PX to REM Conversion
+  * USAGE: .class {font-size: rem(18)}
+  */
+$baseFontSize: $font-size; 
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
 /**
   * Fluid Property
   * Make a property fluidly responsive by using calc and viewport units.
@@ -38,4 +54,28 @@
   */
 @mixin fluid-text($min:20, $max:30, $start: 480, $end: 1200) {
   @include fluid-property(font-size, $min, $max, $start, $end);
+}
+
+
+/**
+  * Clearfix
+  * Usage: @include clearfix()
+  */
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; 
+    display: table; 
+  }
+
+  &:after {
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+  & {
+    *zoom: 1;
+  }
 }
