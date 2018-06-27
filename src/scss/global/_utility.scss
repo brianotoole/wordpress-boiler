@@ -1,8 +1,11 @@
+/*********************************************************
+  Utility / Helper Classes
+  @NOTE: prefix with ".u-"
+*********************************************************/
+
 /**
-  * Utility
+  * Visibility
   */
-
-
 .u-visible-desktop {
   display: none;
   @media (min-width: $desktop) { display: block; }
@@ -16,6 +19,9 @@
   @media (max-width: $tablet) { display: none !important; }
 }
 
+/**
+  * Alignments
+  */
 .u-text-center {
   text-align: center !important;
 }
@@ -24,13 +30,12 @@
   text-align: right !important;
 }
 
-.u-text-larger {
-  font-size: 1.2em !important;
-  line-height: 1.7;
-}
+/**
+  * Text Colors
+  */
 
 .u-color-white {
-  color: #ffffff !important;
+  color: $color__white !important;
 }
 
 .u-color-primary {
@@ -45,6 +50,30 @@
   color: $color__secondary !important;
 }
 
-.bg-tertiary {
-  background-color: $color__tertiary;
+/**
+  * Background Colors
+  */
+
+.u-bg-primary {
+  background-color: $color__primary;
+}
+
+.u-bg-secondary {
+  background-color: $color__secondary;
+}
+
+.u-bg-white {
+  background-color: $color__white;
+}
+
+/**
+  * Fonts
+  */
+
+.u-font-heading {
+  font-family: $font__heading;
+}
+
+.u-font-body {
+  font-family: $font__heading;
 }
