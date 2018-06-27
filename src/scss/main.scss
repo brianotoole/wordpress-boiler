@@ -3,14 +3,13 @@
 *********************************************************/
 
 /**
-  * -- BASE
+  * -- GLOBAL/BASE
   */
 @import 'global/variables';
 @import 'global/mixins';
 @import 'global/reset';
 @import 'global/dom';
 @import 'global/typography';
-@import 'global/utility';
 
 /**
   * -- LAYOUT
@@ -34,3 +33,9 @@
   * -- TEMPLATES
   */
 @import 'templates/about';
+
+/**
+  * -- STATES 
+  */
+@import 'states/utility';
+@import 'states/animations';
