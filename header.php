@@ -22,18 +22,18 @@
         <div class="row header__row">
 
           <div class="col-sm-4 col-xs-7 header__logo">
-            <a href="<?php echo get_site_url(); ?>" class="header__logo-img">
+            <a href="<?php echo get_site_url(); ?>" class="header__logo-wrapper">
               <img src="<?php echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" />
             </a>
           </div><!--/.header__logo-->
 
           <div class="col-sm-8 col-xs-5 header__items">
-            <div class="nav-toggle row end-xs middle-xs u-hidden-desktop" id="js-nav-toggle">
-              <span class="line line-1"></span>
-              <span class="line line-2"></span>
-              <span class="line line-3"></span>
+            <div class="nav-toggle row end-xs middle-xs u-hidden-tablet" id="js-nav-toggle">
+              <span class="nav-toggle__line nav-toggle__line--1"></span>
+              <span class="nav-toggle__line nav-toggle__line--2"></span>
+              <span class="nav-toggle__line nav-toggle__line--3"></span>
             </div><!--/.nav-toggle-->
-            <div class="nav-wrapper u-visible-desktop">
+            <div class="nav-wrapper u-visible-tablet">
               <?php
                 wp_nav_menu(array(
                   //@NOTE: WP Menu must be added to "Primary" location
