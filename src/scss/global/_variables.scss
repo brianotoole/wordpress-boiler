@@ -1,15 +1,18 @@
-///
-// VARIABLES
-////
+/*********************************************************
+  Variables
+  @NOTE: variable naming is using BEM conventions
+*********************************************************/
 
-// color names
-$green:  #b2d357;
-$blue:   #00ace4;
-$gold:   #fdbf29;
-$navy:   #192f5a;
-$white:  #ffffff;
-$black:  #111111;
-$grey:   #757575;
+// generic color names
+$green:      #b2d357;
+$blue:       #00ace4;
+$gold:       #fdbf29;
+$navy:       #192f5a;
+$white:      #ffffff;
+$black:      #111111;
+$grey:       #757575;
+$grey-light: #f9f9f9;
+$grey-dark:  #555555;
 
 // brand colors
 $color__primary:    $green;
@@ -17,6 +20,16 @@ $color__secondary:   $blue;
 $color__tertiary:    $navy;
 $color__accent:      $gold;
 $color__text:       $black;
+
+// shades
+$color__primary--dark: darken($color__primary, 7%);
+$color__secondary--dark: darken($color__secondary, 7%);
+$color__tertiary--dark: darken($color__tertiary, 7%);
+
+// borders
+$color__border:         $grey;
+$color__border--light:  $grey-light;
+$color__border--dark:   $grey-dark;
 
 // fonts
 $font__heading: 'Open Sans', arial, sans-serif;
