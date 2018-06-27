@@ -1,0 +1,88 @@
+/*********************************************************
+  Input
+*********************************************************/
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  label,
+  .form > .form__label {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  
+  input[type='email'],
+  input[type='number'],
+  input[type='password'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='text'],
+  input[type='url'],
+  textarea, {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: rem(18);
+    padding: rem(16) rem(18);
+    font-family: inherit;
+    font-size: 1rem;
+    color: $color-body;
+    border: 1px solid $color-border-base;
+    border-radius: 0;
+    outline: none;
+    transition: 0.2s all ease-out;
+  
+    &:focus,
+    &:active {
+      border-color: $color-primary;
+    }
+  }
+  
+  textarea {
+    max-width: 100%;
+  }
+  
+  .form {
+    &__btn-container {
+      @include bp_md {
+        float: right;
+      }
+    }
+  }
+  
+  .form {
+    &__input {
+      &--success {
+        border-color: $color-success!important;
+      }
+  
+      &--error {
+        border-color: $color-error!important;
+      }
+    }
+  }
+  
+  // placeholders
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color-body;
+    font-size: rem(14);
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: $color-body;
+     font-size: rem(14);
+     opacity: 1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: $color-body;
+     font-size: rem(14);
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: $color-body;
+     font-size: rem(14);
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color: $color-body;
+     font-size: rem(14);
+  }
