@@ -1,26 +1,20 @@
-/*********************************************************
-    Header
-*********************************************************/
-.logo {
-  max-width: 230px;
-  display: flex;
-  img {
-    height: 100%;
-    width: 100%;
-  }
+/**
+  * Header
+  */
+
+.header {
+  font-size: 1em;
 }
 
 .header__inner {
   padding: 1.5em 0 2.5em;
   background: white;
+
   @media (max-width: $tablet) {
     padding-bottom: 1.5em;
   }
 }
 
-.header__row {
-  align-items: flex-end;
-  @media (max-width: $tablet) {
-    align-items: center;
-  }
+.logo {
+  max-width: 230px;
 }

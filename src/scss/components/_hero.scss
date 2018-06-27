@@ -1,135 +1,20 @@
-/*********************************************************
-    Hero
-*********************************************************/
+/**
+  * Hero
+  */
 
-$hero-height: 641px;
-$hero-width: 780px;
-
-.hero {}
-
-.hero--home {
-  margin-bottom: -150px;
+.hero {
+  color: $white;
 }
 
-.hero__inner {
-  position: relative;
-  height: $hero-height + 150px;
-  width: 100%;
-}
+.hero__inner {}
 
-.hero__image-wrapper {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-}
+.hero__heading {}
 
-.hero__shape {
-  position: absolute;
-  right: 45px;
-  top: 45px;
-  height: $hero-height - 90px;
-  width: $hero-width;
-  border: 3px solid $color__primary;
-  z-index: 2;
-}
-
-.hero__image {
-  position: relative;
-  z-index: 3;
-  height: $hero-height;
-  width: $hero-width;
-  background-size: cover;
-  background-position: center;
-}
-
-.cta-box {
-  width: 100%;
-  max-width: 566px;
-  background: $color__secondary;
-  position: relative;
-  z-index: 4;
-  top: 95px;
-  color: white;
-  @include fluid-property(padding,20, 50, $phone, $desktop);
-}
-
-.cta__heading {
-  font-size: 2.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 1.2em;
-}
-
-.cta__description p {
-  font-weight: normal;
-  font-size: 1.2em;
-}
 
 /**
   * Page Hero
   */
 
-$page-hero-bg-height: 245px;
-$page-hero-offset: 90px;
-
-.page-hero {
-  position: relative;
-  margin-bottom: $page-hero-offset;
-}
-
-
-.page-hero__bg {
-  height: 245px;
-  width: 100%;
-  background: url('https://placeimg.com/1000/245/tech');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-}
-
-.page-hero__lead {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -$page-hero-offset;
-
-  @media (max-width: $tablet) {
-    bottom: initial;
-    position: relative;
-    margin-bottom: -85px;
-  }
-}
-
-$page-hero-inner-width: 665px;
-.page-hero__lead-inner {
-  position: relative;
-  z-index: 2;
-  padding: 2.5em;
- background: $color__secondary;
-  @media (max-width: $tablet) { background: rgba($color__secondary,0.9); }
-  color: white;
-  text-align: center;
-  width: 100%;
-  max-width: $page-hero-inner-width;
-  margin: 0 auto;
-  margin-top: -($page-hero-bg-height/1.5);
-
-  p,.p {
-    font-size: 1.65em;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-.page-hero__shape {
-  width: 100%;
-  max-width: 739px;
-  height: 100%;
-  position: absolute;
-  border: 2px solid $color__primary;
-  left: 0;
-  right: 0;
-  top: -50px;
-  margin: 0 auto;
+.hero--page {
+  color: $color__primary;
 }
