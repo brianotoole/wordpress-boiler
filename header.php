@@ -24,15 +24,10 @@
           <div class="col-sm-4 col-xs-7 header__logo">
             <a href="<?php echo get_site_url(); ?>" class="header__logo-wrapper">
               <img src="<?php echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" />
-            </a>
+            </a><!--/.header__logo-wrapper-->
           </div><!--/.header__logo-->
 
           <div class="col-sm-8 col-xs-5 header__items">
-            <div class="nav-toggle row end-xs middle-xs u-hidden-tablet" id="js-nav-toggle">
-              <span class="nav-toggle__line nav-toggle__line--1"></span>
-              <span class="nav-toggle__line nav-toggle__line--2"></span>
-              <span class="nav-toggle__line nav-toggle__line--3"></span>
-            </div><!--/.nav-toggle-->
             <div class="nav-wrapper u-visible-tablet">
               <?php
                 wp_nav_menu(array(
@@ -44,6 +39,11 @@
                 ));
               ?>
             </div><!--/.nav-wrapper-->
+            <div class="nav-toggle u-hidden-tablet" id="js-nav-toggle">
+              <span class="nav-toggle__line nav-toggle__line--1"></span>
+              <span class="nav-toggle__line nav-toggle__line--2"></span>
+              <span class="nav-toggle__line nav-toggle__line--3"></span>
+            </div><!--/.nav-toggle-->
           </div><!--/.header__items-->
 
         </div><!--/.header__row-->
@@ -58,8 +58,8 @@
         wp_nav_menu( array(
           //@NOTE: WP Menu must be added to "Mobile" location
           'theme_location' => 'mobile',
-          'menu_class'     => '',
-          'container'      => false
+          'container'       => 'div',
+          'container_class' => 'nav'
         ) );
       ?>
     </div><!--/.col-->
