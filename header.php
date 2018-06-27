@@ -21,13 +21,13 @@
       <div class="container">
         <div class="row header__row">
 
-          <div class="col-sm-4 col-xs-7 header__logo">
+          <div class="header__logo">
             <a href="<?php echo get_site_url(); ?>" class="header__logo-wrapper">
               <img src="<?php echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" />
             </a><!--/.header__logo-wrapper-->
           </div><!--/.header__logo-->
 
-          <div class="col-sm-8 col-xs-5 header__items">
+          <div class="header__items">
             <div class="nav-wrapper u-visible-tablet">
               <?php
                 wp_nav_menu(array(
@@ -57,9 +57,9 @@
       <?php
         wp_nav_menu( array(
           //@NOTE: WP Menu must be added to "Mobile" location
-          'theme_location' => 'mobile',
-          'container'       => 'div',
-          'container_class' => 'nav'
+          'theme_location'  => 'mobile',
+          'menu_class'      =>'',
+          'container'       => false,
         ) );
       ?>
     </div><!--/.col-->
