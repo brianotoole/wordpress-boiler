@@ -7,43 +7,61 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
 </head>
+
+<?php
+// Custom Field Group == Site Options
+// $site_logo = get_field('site_logo', 'option');
+?>
+
 <body <?php body_class(); ?>>
-  <div id="page">
-    <header class="header">
-      <div class="header__inner">
-        <div class="container">
-          <div class="row header__row">
-            <div class="col-sm-4 col-xs-7">
-              <a href="<?php echo get_site_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" /></a>
-            </div>
-            <div class="col-sm-8 col-xs-5">
-              <div class="mobile-menu-toggle u-hidden-desktop u-text-right js-menu-toggle">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
-              </div>
-               <div class="nav-wrapper u-visible-desktop">
-                <?php
-                wp_nav_menu( array(
+<div id="page">
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="container">
+        <div class="row header__row">
+
+          <div class="col-sm-4 col-xs-7 header__logo">
+            <a href="<?php echo get_site_url(); ?>" class="header__logo-img">
+              <img src="<?php echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" />
+            </a>
+          </div><!--/.header__logo-->
+
+          <div class="col-sm-8 col-xs-5 header__items">
+            <div class="nav-toggle row end-xs middle-xs u-hidden-desktop" id="js-nav-toggle">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </div><!--/.nav-toggle-->
+            <div class="nav-wrapper u-visible-desktop">
+              <?php
+                wp_nav_menu(array(
+                  //@NOTE: WP Menu must be added to "Primary" location
                   'theme_location'  => 'primary',
                   'menu_class'      => 'nav__inner',
                   'container'       => 'div',
                   'container_class' => 'nav'
-                ) );
-                ?>
-              </div>
-              <!-- /.nav-wrapper -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+                ));
+              ?>
+            </div><!--/.nav-wrapper-->
+          </div><!--/.header__items-->
 
-    <div class="mobile-menu">
-      <div class="mobile-menu__close js-menu-toggle"></div>
+        </div><!--/.header__row-->
+      </div><!--/.container-->
+    </div><!--/.header__inner-->
+  </header>
+
+  <!-- NAV-MOBILE -->
+  <div class="row nav-mobile" id="js-nav-mobile">
+    <div class="col-xs-12">
       <?php
-      wp_nav_menu( array(
-        'theme_location' => 'mobile',
-        'menu_class'     => '',
-        'container'      => false
-      ) );
+        wp_nav_menu( array(
+          //@NOTE: WP Menu must be added to "Mobile" location
+          'theme_location' => 'mobile',
+          'menu_class'     => '',
+          'container'      => false
+        ) );
       ?>
-    </div>
+    </div><!--/.col-->
+  </div><!--/.nav-mobile-->
+  <!--/NAV-MOBILE-->
