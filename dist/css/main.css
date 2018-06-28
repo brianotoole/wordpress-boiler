@@ -828,7 +828,7 @@ pre {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 30px;
+  padding: 1.875rem;
   background-color: #ad0101;
   color: #ffffff;
   z-index: 30; }
@@ -1035,6 +1035,9 @@ pre {
     .hero__content {
       margin: 0 auto;
       max-width: 65%; } }
+
+.hero__title {
+  margin: 0; }
 
 /*********************************************************
   CTA
