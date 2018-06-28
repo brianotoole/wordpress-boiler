@@ -80,7 +80,7 @@ button, input[type='submit'] {
   -webkit-appearance: none; }
 
 /*********************************************************
-  Base DOM Styling
+  Base Styling
 *********************************************************/
 html {
   font-size: 100%;
@@ -111,6 +111,9 @@ img {
   width: 100%;
   height: auto; }
 
+/*********************************************************
+    Fonts
+*********************************************************/
 /*********************************************************
   Typography
 *********************************************************/
@@ -159,14 +162,14 @@ p {
   margin: 0 0 0.625rem 0; }
 
 a {
-  color: #111111;
+  color: #7c9091;
   cursor: pointer;
   text-decoration: none;
   transition: 0.2s ease-out; }
   a strong {
     color: currentColor; }
   a:hover, a:focus {
-    color: black; }
+    color: #6a7e7f; }
 
 p, .p {
   margin-bottom: 1.4em;
@@ -867,7 +870,7 @@ blockquote {
 *********************************************************/
 .btn {
   display: inline-block;
-  padding: 0.9em 0.9em 0.7em;
+  padding: 0.625rem 0.625rem 0.5rem;
   background: #ad0101;
   color: #ffffff;
   font-family: inherit;
@@ -889,11 +892,11 @@ blockquote {
     background: #8a0101; }
 
 .btn--secondary {
-  background: #111111;
+  background: #7c9091;
   color: #ffffff; }
   .btn--secondary:hover, .btn--secondary:focus {
     color: white;
-    background: black; }
+    background: #6a7e7f; }
 
 .btn--transparent {
   background: transparent;
@@ -904,11 +907,11 @@ blockquote {
 
 .btn--small {
   font-size: 0.875rem;
-  padding: 0.4em 0.4em 0.2em; }
+  padding: 0.3125rem 0.3125rem 0.1875rem; }
 
 .btn--large {
   font-size: 1.125rem;
-  padding: 1.1em 1.1em 0.9em; }
+  padding: 0.9375rem 0.9375rem 0.75rem; }
 
 .btn--disabled {
   opacity: 0.8;
@@ -923,8 +926,8 @@ blockquote {
 *********************************************************/
 .hero {
   position: relative;
-  height: 550px;
-  background: #111111;
+  height: 500px;
+  background: #7c9091;
   color: #ffffff; }
   .hero--full-height {
     height: calc(100vh - 85px); }
@@ -937,11 +940,8 @@ blockquote {
       bottom: 0;
       left: 0;
       width: 100%;
-      background: rgba(17, 17, 17, 0.8);
+      background: rgba(124, 144, 145, 0.8);
       z-index: 1; }
-
-.hero__background-image {
-  height: 100%; }
 
 .hero__content {
   position: relative;
@@ -1087,7 +1087,7 @@ textarea {
   input[type='url']:active,
   textarea:focus,
   textarea:active {
-    border-color: #111111; }
+    border-color: #7c9091; }
 
 textarea {
   max-width: 100%; }
@@ -1208,10 +1208,10 @@ textarea {
   color: #ad0101; }
 
 .u-color-link {
-  color: #111111; }
+  color: #7c9091; }
 
 .u-color-secondary {
-  color: #111111; }
+  color: #7c9091; }
 
 /**
   * Background Colors
@@ -1220,7 +1220,7 @@ textarea {
   background-color: #ad0101; }
 
 .u-bg-secondary {
-  background-color: #111111; }
+  background-color: #7c9091; }
 
 .u-bg-white {
   background-color: #ffffff; }
