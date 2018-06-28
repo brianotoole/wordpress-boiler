@@ -4,8 +4,9 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font__heading;
-  font-weight: normal;
-  line-height: 1.4;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: rem(20);
 }
 
 //@TODO: consider using fluid typopgraphy mixin
@@ -52,7 +53,7 @@ h6, .h6 {
 }
 
 p {
-  margin: 0 0 rem(10) 0;
+  margin: 0 0 rem(20) 0;
 }
 
 a {
@@ -75,4 +76,10 @@ address {
 
 blockquote {
   color: $color__primary;
+}
+
+pre {
+  padding: 20px;
+  background: $color__black;
+  color: $color__white;
 }
