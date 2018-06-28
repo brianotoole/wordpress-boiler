@@ -5,51 +5,65 @@
 .btn {
   display: inline-block;
   padding: 0.9em 0.9em 0.7em;
-  background: $grey;
+  background: $color__primary; //btn default == primary
+  color: $color__white;
+  font-family: inherit;
+  font-size: $font-size;
   text-align: center;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  min-width: 230px;
-  font-size: 0.85em;
+  text-decoration: none;
   text-transform: uppercase;
-
-  &:hover, &:focus, &:visited {
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  &:hover, &:focus {
     color: white;
+    background: $color__primary--dark;
   }
-}
-
-.btn--large {
-  padding-top: 1.2em;
-  padding-bottom: 1em;
-  width: 100%;
-  max-width: 250px;
 }
 
 .btn--primary {
   background: $color__primary;
-  color: white;
-  transition: 0.1s;
-
-  &:hover,
-  &:visited:hover {
+  color: $color__white;
+  &:hover, &:focus {
     color: white;
-    background: darken($color__primary, 7%);
-    transition: 0.3s;
-    cursor: pointer;
+    background: $color__primary--dark;
   }
 }
 
-.btn--outline {
-  border: 2px solid white;
-  background: transparent;
-  color: white;
-  transition: 0.1s;
-
-  &:visited { color: white; }
-
-  &:hover {
-    background: white;
-    transition: 0.2s;
+.btn--secondary {
+  background: $color__secondary;
+  color: $color__white;
+  &:hover, &:focus {
+    color: white;
+    background: $color__secondary--dark;
   }
+}
+
+.btn--transparent {
+  background: transparent;
+  color: $color__primary;
+  &:hover, &:focus {
+    color: $color__white;
+    background: $color__primary;
+  }
+}
+
+.btn--small {
+  font-size: rem(14px);
+  padding: 0.4em 0.4em 0.2em;
+}
+
+.btn--large {
+  font-size: rem(18px);
+  padding: 1.1em 1.1em 0.9em;
+}
+
+.btn--disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btn--block {
+  display: block;
+  max-width: 100%;
 }
 

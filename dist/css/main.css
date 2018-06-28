@@ -864,42 +864,55 @@ blockquote {
 .btn {
   display: inline-block;
   padding: 0.9em 0.9em 0.7em;
-  background: #757575;
+  background: #ad0101;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
   text-align: center;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  min-width: 230px;
-  font-size: 0.85em;
-  text-transform: uppercase; }
-  .btn:hover, .btn:focus, .btn:visited {
-    color: white; }
-
-.btn--large {
-  padding-top: 1.2em;
-  padding-bottom: 1em;
-  width: 100%;
-  max-width: 250px; }
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-out; }
+  .btn:hover, .btn:focus {
+    color: white;
+    background: #8a0101; }
 
 .btn--primary {
   background: #ad0101;
-  color: white;
-  transition: 0.1s; }
-  .btn--primary:hover, .btn--primary:visited:hover {
+  color: #ffffff; }
+  .btn--primary:hover, .btn--primary:focus {
     color: white;
-    background: #8a0101;
-    transition: 0.3s;
-    cursor: pointer; }
+    background: #8a0101; }
 
-.btn--outline {
-  border: 2px solid white;
+.btn--secondary {
+  background: #111111;
+  color: #ffffff; }
+  .btn--secondary:hover, .btn--secondary:focus {
+    color: white;
+    background: black; }
+
+.btn--transparent {
   background: transparent;
-  color: white;
-  transition: 0.1s; }
-  .btn--outline:visited {
-    color: white; }
-  .btn--outline:hover {
-    background: white;
-    transition: 0.2s; }
+  color: #ad0101; }
+  .btn--transparent:hover, .btn--transparent:focus {
+    color: #ffffff;
+    background: #ad0101; }
+
+.btn--small {
+  font-size: 0.875rem;
+  padding: 0.4em 0.4em 0.2em; }
+
+.btn--large {
+  font-size: 1.125rem;
+  padding: 1.1em 1.1em 0.9em; }
+
+.btn--disabled {
+  opacity: 0.8;
+  cursor: not-allowed; }
+
+.btn--block {
+  display: block;
+  max-width: 100%; }
 
 /*********************************************************
   Hero
