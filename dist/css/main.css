@@ -1093,6 +1093,26 @@ textarea {
   color: #111111;
   font-size: 1rem; }
 
+/*********************************************************
+    Tables
+*********************************************************/
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse; }
+  .table th {
+    padding: .8rem;
+    font-weight: 600;
+    border-bottom: 0.2rem solid rgba(17, 17, 17, 0.25);
+    vertical-align: bottom; }
+  .table td {
+    padding: .8rem;
+    border-top: 1px solid rgba(17, 17, 17, 0.25); }
+  .table--striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.03); }
+  .table--hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.06); }
+
 /**
   * -- TEMPLATES
   */
