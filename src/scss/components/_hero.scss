@@ -1,18 +1,54 @@
 /*********************************************************
-  Hero
+    Hero
 *********************************************************/
+$header-height: 85px;
+.hero {
+  position: relative;
+  height: 550px;
+  background: $color__secondary;
+  color: $color__white;
+  //background: url('../img/bg-hero.png') 0 0 repeat;
 
-.hero {}
+  &--full-height {
+    height: calc(100vh - #{$header-height});
+  }
 
-.hero__inner {}
+  &--has-overlay {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba($color__secondary, 0.8);
+      z-index: 1;
+    }
+  }
 
-.hero__heading {}
+}
 
+.hero__background-image {
+  height: 100%;
+}
 
-/**
-  * Page Hero
-  */
+.hero__content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  color: $color__white;
+  z-index: 10;
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    max-width: 65%;
+  }
+}
 
-.hero--page {
-  color: $color__primary;
+.hero__title {}
+
+.hero__subtitle {
+  margin-top: 0.5em;
 }

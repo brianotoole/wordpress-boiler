@@ -919,13 +919,45 @@ blockquote {
   max-width: 100%; }
 
 /*********************************************************
-  Hero
+    Hero
 *********************************************************/
-/**
-  * Page Hero
-  */
-.hero--page {
-  color: #ad0101; }
+.hero {
+  position: relative;
+  height: 550px;
+  background: #111111;
+  color: #ffffff; }
+  .hero--full-height {
+    height: calc(100vh - 85px); }
+  .hero--has-overlay {
+    position: relative; }
+    .hero--has-overlay:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(17, 17, 17, 0.8);
+      z-index: 1; }
+
+.hero__background-image {
+  height: 100%; }
+
+.hero__content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10; }
+  @media (min-width: 768px) {
+    .hero__content {
+      margin: 0 auto;
+      max-width: 65%; } }
+
+.hero__subtitle {
+  margin-top: 0.5em; }
 
 /*********************************************************
   CTA
