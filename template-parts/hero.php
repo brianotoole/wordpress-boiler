@@ -7,7 +7,7 @@
 <section class="hero">
   <div class="hero__content container">
       <h1 class="hero__title">WP Theme Boilerplate</h1>
-      <p class="hero__subtitle">A minimalistic wordpress boilerplate that follows BEM methodology.</p>
+      <p class="hero__subtitle">A minimalistic wordpress theme that follows BEM methodology and comes preloaded with a few resusable components and design considerations that will help save time with initial setup.</p>
       <div class="hero__btn-container">
         <a href="#" class="btn btn--primary js-modal-trigger">Modal Example</a>
       </div>

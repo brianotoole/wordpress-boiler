@@ -23,7 +23,8 @@
 
           <div class="header__logo">
             <a href="<?php echo get_site_url(); ?>" class="header__logo-wrapper">
-              <img src="<?php echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" />
+              <span>Wordpress Theme Boiler</span>
+              <!--<img src=" echo get_template_directory_uri() . '/assets/img/logo.svg'; ?>" alt="logo" rel="logo" />-->
             </a><!--/.header__logo-wrapper-->
           </div><!--/.header__logo-->
 
