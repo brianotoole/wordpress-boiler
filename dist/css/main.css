@@ -120,42 +120,43 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: normal;
+  text-transform: uppercase;
   line-height: 1.2; }
 
-h1 {
+h1, .h1 {
   font-size: 1.75rem; }
   @media (min-width: 768px) {
-    h1 {
-      font-size: 3.125rem; } }
+    h1, .h1 {
+      font-size: 3.625rem; } }
 
-h2 {
+h2, .h2 {
   font-size: 1.75rem; }
   @media (min-width: 768px) {
-    h2 {
-      font-size: 3.125rem; } }
+    h2, .h2 {
+      font-size: 3.25rem; } }
 
-h3 {
+h3, .h3 {
   font-size: 1.5rem; }
   @media (min-width: 768px) {
-    h3 {
+    h3, .h3 {
       font-size: 2.875rem; } }
 
-h4 {
+h4, .h4 {
   font-size: 1.375rem; }
   @media (min-width: 768px) {
-    h4 {
+    h4, .h4 {
       font-size: 2.375rem; } }
 
-h5 {
+h5, .h5 {
   font-size: 1.125rem; }
   @media (min-width: 768px) {
-    h5 {
+    h5, .h5 {
       font-size: 1.75rem; } }
 
-h6 {
+h6, .h6 {
   font-size: 1rem; }
   @media (min-width: 768px) {
-    h6 {
+    h6, .h6 {
       font-size: 1rem; } }
 
 p {
@@ -165,19 +166,14 @@ a {
   color: #7c9091;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s ease-out; }
-  a strong {
-    color: currentColor; }
+  transition: 0.3s ease-out; }
   a:hover, a:focus {
     color: #6a7e7f; }
 
-p, .p {
-  margin-bottom: 1.4em;
-  text-transform: none;
-  letter-spacing: normal; }
+strong {
+  color: currentColor; }
 
 address {
-  line-height: 1.5;
   font-style: normal; }
 
 blockquote {

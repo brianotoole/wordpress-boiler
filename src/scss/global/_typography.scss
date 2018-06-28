@@ -5,45 +5,46 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $font__heading;
   font-weight: normal;
+  text-transform: uppercase;
   line-height: 1.2;
 }
 
-h1 {
+h1, .h1 {
   font-size: rem(28);
   @media (min-width: $tablet) {
-    font-size: rem(50);
+    font-size: rem(58);
   }
 }
 
-h2 {
+h2, .h2 {
   font-size: rem(28);
   @media (min-width: $tablet) {
-    font-size: rem(50);
+    font-size: rem(52);
   }
 }
 
-h3 {
+h3, .h3 {
   font-size: rem(24);
   @media (min-width: $tablet) {
     font-size: rem(46);
   }
 }
 
-h4 {
+h4, .h4 {
   font-size: rem(22);
   @media (min-width: $tablet) {
     font-size: rem(38);
   }
 }
 
-h5 {
+h5, .h5 {
   font-size: rem(18);
   @media (min-width: $tablet) {
     font-size: rem(28);
   }
 }
 
-h6 {
+h6, .h6 {
   font-size: rem(16);
   @media (min-width: $tablet) {
     font-size: rem(16);
@@ -58,23 +59,17 @@ a {
   color: $color__secondary;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s ease-out;
-
-  strong { color: currentColor; }
-
+  transition: 0.3s ease-out;
   &:hover, &:focus {
     color: $color__secondary--dark;
   }
 }
 
-p, .p {
-  margin-bottom: 1.4em;
-  text-transform: none;
-  letter-spacing: normal;
+strong { 
+  color: currentColor; 
 }
 
 address {
-  line-height: 1.5;
   font-style: normal;
 }
 
