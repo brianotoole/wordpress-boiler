@@ -2,25 +2,28 @@
   Base Styling
 *********************************************************/
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
   background-color: $color__white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
-  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
-  color: $grey;
   font-size: $font-size;
-  font-weight: 300;
-  line-height: 1.5;
   font-family: $font__body;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $color__text;
   overflow-x: hidden;
 }
 
