@@ -18,7 +18,7 @@
 
   <header class="header">
     <div class="header__inner">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row header__row">
 
           <div class="header__logo">
