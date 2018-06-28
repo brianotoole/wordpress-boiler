@@ -1281,6 +1281,52 @@ textarea {
   * -- STATES 
   */
 /*********************************************************
+    Animations
+*********************************************************/
+@keyframes scrollDown {
+  0% {
+    transform: translateY(20px);
+    animation-timing-function: cubic-bezier(0.65, 0.88, 0.36, 0.29); }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-in; }
+  100% {
+    transform: translateY(20px);
+    animation-timing-function: cubic-bezier(0.65, 0.88, 0.36, 0.29); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes sign {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 1368; } }
+
+@keyframes fill {
+  0% {
+    color: transparent; }
+  50% {
+    color: #ffffff; }
+  100% {
+    color: #ad0101; } }
+
+@keyframes exitUp {
+  from {
+    transform: translate(0, 0); }
+  to {
+    transform: translate(-100%, 0); } }
+
+@keyframes exitDown {
+  from {
+    transform: translate(0, 0); }
+  to {
+    transform: translate(100%, 0); } }
+
+/*********************************************************
   Utility / Helper Classes
   @NOTE: prefix with ".u-"
 *********************************************************/
@@ -1355,49 +1401,3 @@ textarea {
 
 .u-font-body {
   font-family: "Roboto", sans-serif; }
-
-/*********************************************************
-    Animations
-*********************************************************/
-@keyframes scrollDown {
-  0% {
-    transform: translateY(20px);
-    animation-timing-function: cubic-bezier(0.65, 0.88, 0.36, 0.29); }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: ease-in; }
-  100% {
-    transform: translateY(20px);
-    animation-timing-function: cubic-bezier(0.65, 0.88, 0.36, 0.29); } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes sign {
-  from {
-    stroke-dashoffset: 0; }
-  to {
-    stroke-dashoffset: 1368; } }
-
-@keyframes fill {
-  0% {
-    color: transparent; }
-  50% {
-    color: #ffffff; }
-  100% {
-    color: #ad0101; } }
-
-@keyframes exitUp {
-  from {
-    transform: translate(0, 0); }
-  to {
-    transform: translate(-100%, 0); } }
-
-@keyframes exitDown {
-  from {
-    transform: translate(0, 0); }
-  to {
-    transform: translate(100%, 0); } }
