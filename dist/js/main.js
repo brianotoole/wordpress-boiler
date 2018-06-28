@@ -78,39 +78,31 @@ module.exports = __webpack_require__(3);
 "use strict";
 
 
-var _modal = __webpack_require__(5);
+var _modal = __webpack_require__(6);
 
 var _modal2 = _interopRequireDefault(_modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
-  * MAIN JS ENTRY POINT
-  */
+/*********************************************************
+  Main JS Entry Point
+*********************************************************/
 
-// layout / dom
-__webpack_require__(2);
+// GLOBAL
+__webpack_require__(9);
 
-// components
+// COMPONENTS
+// @TODO: convert to es6
+__webpack_require__(7);
+__webpack_require__(8);
 
 var modal = new _modal2.default();
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// Nav
-var trigger = $('#js-nav-toggle');
-trigger.click(function () {
-  $('#js-nav-mobile').toggleClass('nav-open');
-  $('#js-nav-toggle').toggleClass('active');
-  $('body').toggleClass('nav-open');
-});
+// TEMPLATES
+//require('./templates/about.js');
 
 /***/ }),
+/* 2 */,
 /* 3 */
 /***/ (function(module, exports) {
 
@@ -118,7 +110,8 @@ trigger.click(function () {
 
 /***/ }),
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -182,6 +175,94 @@ var Modal = function () {
 }(); //Modal
 
 exports.default = Modal;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// Nav
+var trigger = $('#js-nav-toggle');
+trigger.click(function () {
+  $('#js-nav-mobile').toggleClass('nav-open');
+  $('#js-nav-toggle').toggleClass('active');
+  $('body').toggleClass('nav-open');
+});
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+  * Social Sharing Links
+  */
+$('.js-social-share').click(function (e) {
+  // we're not going to go to the link, just pull data from it
+  e.preventDefault();
+
+  // decide what social share url string to use based on 'data-social' value
+  var social = $(this).data('social');
+
+  // pull the a href value
+  var url = $(this).attr('href');
+  // pop window parameters
+  var window_args = "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600";
+  var share_link = void 0;
+
+  if (url === '' || url === '#') {
+    url = window.location.href;
+  }
+
+  if (social === 'facebook') {
+    share_link = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+  } else if (social === 'twitter') {
+    share_link = "https://twitter.com/intent/tweet?url=" + url;
+  } else {
+    share_link = "https://www.linkedin.com/shareArticle?mini=true&url=" + url;
+  }
+
+  window.open(share_link, "", window_args);
+});
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * -- EVENTS
+ */
+
+//import { fitText } from "./components/fit-text";
+
+/**
+  * These functions execute in order.
+  */
+(function () {})();
+
+/**
+  * Events that fire when the page is loaded.
+  */
+$(document).ready(function () {
+  /*
+  $('.carousel').slick({
+    adaptiveHeight: true
+  });
+  */
+}); // /.ready
+
+
+/**
+ * Events that fire on Window Scroll
+ */
+$(window).scroll(function () {}); // /.scroll
 
 /***/ })
 /******/ ]);
