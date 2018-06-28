@@ -78,9 +78,22 @@ module.exports = __webpack_require__(3);
 "use strict";
 
 
-//require('./events.js');
+var _modal = __webpack_require__(5);
+
+var _modal2 = _interopRequireDefault(_modal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+  * MAIN JS ENTRY POINT
+  */
+
+// layout / dom
 __webpack_require__(2);
-//require('./social-sharing.js');
+
+// components
+
+var modal = new _modal2.default();
 
 /***/ }),
 /* 2 */
@@ -102,6 +115,73 @@ trigger.click(function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+  * MODAL
+  */
+
+var Modal = function () {
+  function Modal() {
+    _classCallCheck(this, Modal);
+
+    this.modalTrigger = $('.js-modal-trigger');
+    this.modal = $('.modal');
+    this.modalClose = $('.modal__close');
+    this.events();
+  }
+
+  _createClass(Modal, [{
+    key: 'events',
+    value: function events() {
+      // click on open modal
+      this.modalTrigger.click(this.openModal.bind(this)); //bind 'this' keyword to what it is set to
+
+      // click on x close btn
+      this.modalClose.click(this.closeModal.bind(this));
+
+      // keyup event
+      $(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal() {
+      this.modal.addClass('modal--is-open');
+      return false; //prevent default behavior of link click
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('modal--is-open');
+    }
+  }]);
+
+  return Modal;
+}(); //Modal
+
+exports.default = Modal;
 
 /***/ })
 /******/ ]);

@@ -198,6 +198,8 @@ blockquote {
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
+  .container--narrow {
+    max-width: 800px; }
 
 .container-fluid {
   margin-right: auto;
@@ -989,6 +991,48 @@ blockquote {
   .cta h2 {
     margin-bottom: 0.7em;
     text-transform: uppercase; }
+
+/*********************************************************
+    Modal
+*********************************************************/
+.modal {
+  position: fixed;
+  z-index: 50;
+  background-color: rgba(173, 1, 1, 0.98);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all 0.3s ease-out; }
+  .modal--is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); }
+
+.modal__inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff; }
+
+.modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.75rem;
+  color: #ffffff;
+  transform: scaleX(1.2);
+  transform-origin: 100% 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out; }
+  .modal__close:hover {
+    color: #e6e6e6; }
 
 /*********************************************************
   Carousel

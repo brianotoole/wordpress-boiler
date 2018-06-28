@@ -1,3 +1,10 @@
-//require('./events.js');
+/**
+  * MAIN JS ENTRY POINT
+  */
+
+// layout / dom
 require('./nav.js');
-//require('./social-sharing.js');
+
+// components
+import Modal from './modal';
+var modal = new Modal();
