@@ -12,6 +12,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
   cursor: pointer;
   transition: 0.3s ease-out;
   &:hover, &:focus {
@@ -38,12 +39,11 @@
   }
 }
 
-.btn--transparent {
+.btn--clear {
   background: transparent;
   color: $color__primary;
   &:hover, &:focus {
-    color: $color__white;
-    background: $color__primary;
+    color: $color__primary--dark;
   }
 }
 

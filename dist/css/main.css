@@ -958,6 +958,7 @@ pre {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
   cursor: pointer;
   transition: 0.3s ease-out; }
   .btn:hover, .btn:focus {
@@ -978,12 +979,11 @@ pre {
     color: white;
     background: #6a7e7f; }
 
-.btn--transparent {
+.btn--clear {
   background: transparent;
   color: #ad0101; }
-  .btn--transparent:hover, .btn--transparent:focus {
-    color: #ffffff;
-    background: #ad0101; }
+  .btn--clear:hover, .btn--clear:focus {
+    color: #8a0101; }
 
 .btn--small {
   font-size: 0.875rem;
