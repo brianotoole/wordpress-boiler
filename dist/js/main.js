@@ -106,7 +106,7 @@ var modal = new _modal2.default();
 /* 3 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import 'components/nav';\n^\n      File to import not found or unreadable: /Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/src/scss/components/_nav.scss.\n      in /Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/src/scss/main.scss (line 26, column 1)\n    at runLoaders (/Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/neo-async/async.js:7974:18)\n    at options.error (/Applications/MAMP/htdocs/wordpress-boiler/wp-content/themes/wordpack-boiler/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ }),
 /* 4 */,
