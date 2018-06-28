@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
+//@TODO: consider using fluid typopgraphy mixin
 h1, .h1 {
   font-size: rem(28);
   @media (min-width: $tablet) {
