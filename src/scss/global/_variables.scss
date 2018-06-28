@@ -5,10 +5,11 @@
 
 // generic color names
 $red:        #ad0101;
-$black:      #111111;
+$offgrey:    #7c9091;
 $gold:       #fdbf29;
 $blue:       #00ace4;
 $green:      #4bb14b;
+$black:      #111111;
 $white:      #ffffff;
 $grey:       #757575;
 $grey-light: #f9f9f9;
@@ -16,7 +17,7 @@ $grey-dark:  #555555;
 
 // brand colors
 $color__primary:     $red;
-$color__secondary:   $black;
+$color__secondary:   $offgrey;
 $color__tertiary:    $gold;
 $color__text:       $black;
 $color__white:      $white;
