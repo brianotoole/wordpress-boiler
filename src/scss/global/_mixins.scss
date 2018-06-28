@@ -7,7 +7,7 @@
   * PX to REM Conversion
   * USAGE: .class {font-size: rem(18)}
   */
-$baseFontSize: $font-size; 
+$baseFontSize: 16; 
 @function rem($pixels, $context: $baseFontSize) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
