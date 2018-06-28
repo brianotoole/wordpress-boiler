@@ -4,7 +4,7 @@
 
 .btn {
   display: inline-block;
-  padding: 0.9em 0.9em 0.7em;
+  padding: rem(10px) rem(10px) rem(8px);
   background: $color__primary; //btn default == primary
   color: $color__white;
   font-family: inherit;
@@ -49,12 +49,12 @@
 
 .btn--small {
   font-size: rem(14px);
-  padding: 0.4em 0.4em 0.2em;
+  padding: rem(5px) rem(5px) rem(3px);
 }
 
 .btn--large {
   font-size: rem(18px);
-  padding: 1.1em 1.1em 0.9em;
+  padding: rem(15px) rem(15px) rem(12px);
 }
 
 .btn--disabled {
