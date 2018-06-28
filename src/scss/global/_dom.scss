@@ -3,8 +3,8 @@
 *********************************************************/
 
 html {
-  background-color: white;
-  font-size: $font-size;
+  font-size: 100%;
+  background-color: $color__white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -17,7 +17,7 @@ html {
 
 body {
   color: $grey;
-  font-size: 1rem;
+  font-size: $font-size;
   font-weight: 300;
   line-height: 1.5;
   font-family: $font__body;
@@ -28,4 +28,9 @@ body {
   position: absolute;
   width: 100%;
   overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

@@ -83,8 +83,8 @@ button, input[type='submit'] {
   Base DOM Styling
 *********************************************************/
 html {
-  background-color: white;
-  font-size: 16px;
+  font-size: 100%;
+  background-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -96,7 +96,7 @@ html {
 
 body {
   color: #757575;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   font-family: "Poppins", arial, sans-serif;
@@ -106,6 +106,10 @@ body {
   position: absolute;
   width: 100%;
   overflow-x: hidden; }
+
+img {
+  width: 100%;
+  height: auto; }
 
 /*********************************************************
   Typography
