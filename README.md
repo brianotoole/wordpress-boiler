@@ -23,6 +23,13 @@ Using `Flexbox-Sass` as the grid, with custom container size set in `./layout/_g
 ## Utilities
 Some functional helper classses are included to improve the performance and productivity everyday. All utilties are prefixed with `-u-*` for maintainable code syntax. Utilities are found in `./states/_utility.scss`.
 
+## Components
+Ships with a few design-agnostic components, such as:
+* Nav/Nav-mobile, using `Primary` and `Mobile` menu locaitons inside WP Admin
+* Hero with a few modifier classes, such as `--full-height` and `--has-gradient`, and basic ACF field data 
+* Modal
+* More to come, but purpose of this is to only provide foundation for architecture
+
 ## Mobile First
 Mobile First is the design strategy that takes priority development for mobile devices like smartphones and tablets. It means all styles outside of a media queries apply to all devices, then larger screens are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. This theme uses the concept of "larger than" when thinking about breakpoints. Below are the defined  breakpoints:
 
