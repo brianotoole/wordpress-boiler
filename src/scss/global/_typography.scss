@@ -79,7 +79,12 @@ blockquote {
 }
 
 pre {
-  padding: 20px;
+  padding: rem(20);
   background: $color__black;
   color: $color__white;
+}
+
+.entry-content ul {
+  list-style-type: disc;
+  padding-left: rem(20)
 }

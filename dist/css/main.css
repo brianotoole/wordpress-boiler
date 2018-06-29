@@ -254,9 +254,13 @@ blockquote {
   color: #ad0101; }
 
 pre {
-  padding: 20px;
+  padding: 1.25rem;
   background: #111111;
   color: #ffffff; }
+
+.entry-content ul {
+  list-style-type: disc;
+  padding-left: 1.25rem; }
 
 /**
   * -- LAYOUT
