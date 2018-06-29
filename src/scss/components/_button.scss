@@ -43,6 +43,7 @@
   background: transparent;
   color: $color__primary;
   &:hover, &:focus {
+    background: transparent;
     color: $color__primary--dark;
   }
 }

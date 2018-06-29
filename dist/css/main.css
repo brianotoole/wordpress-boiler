@@ -1018,6 +1018,7 @@ pre {
   background: transparent;
   color: #ad0101; }
   .btn--clear:hover, .btn--clear:focus {
+    background: transparent;
     color: #8a0101; }
 
 .btn--small {

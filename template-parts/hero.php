@@ -13,9 +13,11 @@ $slug_name = get_post_field('post_name', get_post());
   <div class="hero__content container">
       <h1 class="hero__title"><?php echo $hero_title; ?></h1>
       <p class="hero__subtitle"><?php echo $hero_subtitle; ?></p>
+      <?php if ($hero_button) : ?>
       <div class="hero__btn-container">
         <a href="<?php echo $hero_button['url']; ?>" target="<?php echo $hero_button['target']; ?>" class="btn btn--primary"><?php echo $hero_button['title']; ?></a>
       </div><!--/.hero__btn-container-->
+      <?php endif; ?>
   </div><!--/.hero__content-->
 </section><!--/.hero-->
 <?php endif; ?>
