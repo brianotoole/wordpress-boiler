@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(3);
+module.exports = __webpack_require__(6);
 
 
 /***/ }),
@@ -78,7 +78,7 @@ module.exports = __webpack_require__(3);
 "use strict";
 
 
-var _modal = __webpack_require__(6);
+var _modal = __webpack_require__(2);
 
 var _modal2 = _interopRequireDefault(_modal);
 
@@ -89,12 +89,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 *********************************************************/
 
 // GLOBAL
-__webpack_require__(9);
+__webpack_require__(3);
 
 // COMPONENTS
 // @TODO: convert to es6
-__webpack_require__(7);
-__webpack_require__(8);
+__webpack_require__(4);
+__webpack_require__(5);
 
 var modal = new _modal2.default();
 
@@ -102,16 +102,7 @@ var modal = new _modal2.default();
 //require('./templates/about.js');
 
 /***/ }),
-/* 2 */,
-/* 3 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -177,7 +168,42 @@ var Modal = function () {
 exports.default = Modal;
 
 /***/ }),
-/* 7 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * -- EVENTS
+ */
+
+//import { fitText } from "./components/fit-text";
+
+/**
+  * These functions execute in order.
+  */
+(function () {})();
+
+/**
+  * Events that fire when the page is loaded.
+  */
+$(document).ready(function () {
+  /*
+  $('.carousel').slick({
+    adaptiveHeight: true
+  });
+  */
+}); // /.ready
+
+
+/**
+ * Events that fire on Window Scroll
+ */
+$(window).scroll(function () {}); // /.scroll
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -192,7 +218,7 @@ trigger.click(function () {
 });
 
 /***/ }),
-/* 8 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -230,39 +256,10 @@ $('.js-social-share').click(function (e) {
 });
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 6 */
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-/**
- * -- EVENTS
- */
-
-//import { fitText } from "./components/fit-text";
-
-/**
-  * These functions execute in order.
-  */
-(function () {})();
-
-/**
-  * Events that fire when the page is loaded.
-  */
-$(document).ready(function () {
-  /*
-  $('.carousel').slick({
-    adaptiveHeight: true
-  });
-  */
-}); // /.ready
-
-
-/**
- * Events that fire on Window Scroll
- */
-$(window).scroll(function () {}); // /.scroll
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

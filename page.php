@@ -1,21 +1,15 @@
 <?php // Default Page Template
 
+// Header
 get_header(); 
 
+// Hero
 get_template_part('template-parts/hero', '');
 
+// Content
+get_template_part('template-parts/content', '');
+
+// Footer
+get_footer(); 
+
 ?>
-
-<div class="container">
-  <?php //loop content
-  if ( have_posts() ) :
-    while ( have_posts() ) :
-      the_post();
-      the_content();
-  ?>
-  <?php endwhile; else : ?>
-
-  <?php endif; ?>
-</div>
-
-<?php get_footer(); ?>
