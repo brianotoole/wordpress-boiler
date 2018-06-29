@@ -43,6 +43,15 @@ Mobile First is the design strategy that takes priority development for mobile d
 * Larger than Tablet screen: 57.5rem (920px)
 * Larger than Desktop screen: 75rem (1200px)
 
+## Packages Included
+1. [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
+will use the data based on current browser popularity and property support to automatically apply prefixes. This requires the [postcss-loader](https://github.com/postcss/postcss-loader) loader to be installed & used within `webpack.config.js` file. This is already setup and includes the `postcss.config` file needed to work. See the postcss-loader [documentation](https://github.com/postcss/postcss-loader) for dealing with browser support / options.
+
+2. [BrowserSync](https://www.npmjs.com/package/browser-sync-webpack-plugin): 
+This boiler is using BrowserSync to serve the project and Webpack Dev Server is not needed. The setup is pretty easy: just pass the BrowserSync options to the plugin as the first argument within the `webpack.config.js` file.
+
+3. Babel: [babel-core](https://github.com/babel/babel-loader) and [babel-loader](https://github.com/babel/babel-loader) are used with the [Babel-Preset-ES2015](https://www.npmjs.com/package/babel-preset-es2015-webpack) preset. This preset is used to enable code to be written in ES2015 (ES6) and compiled for browser support down to ES5.
+
 ## Requirements
 To use everything this theme ships with, you need the following installed on your machine:
 
@@ -73,10 +82,10 @@ npm run dev
 This will open up a browser window with local site and watch for file changes - http://localhost:3000/wordpress-boiler
 
 
-### Local images and font files 
+## Local images and font files 
 Webpack needs a separate loader installed to use local images and/or fonts within the project's directory. This boilerplate uses `url-loader` to bundle/load images. Url-loader has the ability to load files as base64 encoded DataURL if the file is smaller than a specificied byte limit. This helps reduce the number of requests made. To change this configuration, refer to the rule set under "URL-LOADER within `webpack.config.js`
 
-##### URL-Loader setup
+## URL-Loader setup
 The default specificed byte limit on this boilerplate to serve DataURL's on images is 10KB, or 10,000 bytes. There are 2 separate url-loader options to test for. 
 
 **1. Test for image files**
@@ -97,21 +106,12 @@ This is testing for files with `.jpg/.jpeg/.png/.svg` extention types. If the fi
 ```
 This is testing for files with `.woff/.woff2/.eot/.ttf` extention types. If the file is less than 10KB, serve this as a DataURL. If greater than 10KB, bundle to the path within `&name`. Or, `./dist/fonts/[name].[ext]`.
 
-##### Using Images in Stylesheets
+## Using Images in Stylesheets
 Add images within the `./src/img/` folder.
 To use the image within a stylesheet, use the relative path from the main entrypoint file, `./src/index.js`. An example:
 ``` css
 .section--has-bg { background: url('../img/bg-brick.png') 0 0 repeat; }
 ```
-
-### Packages Included
-1. [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
-will use the data based on current browser popularity and property support to automatically apply prefixes. This requires the [postcss-loader](https://github.com/postcss/postcss-loader) loader to be installed & used within `webpack.config.js` file. This is already setup and includes the `postcss.config` file needed to work. See the postcss-loader [documentation](https://github.com/postcss/postcss-loader) for dealing with browser support / options.
-
-2. [BrowserSync](https://www.npmjs.com/package/browser-sync-webpack-plugin): 
-This boiler is using BrowserSync to serve the project and Webpack Dev Server is not needed. The setup is pretty easy: just pass the BrowserSync options to the plugin as the first argument within the `webpack.config.js` file.
-
-3. Babel: [babel-core](https://github.com/babel/babel-loader) and [babel-loader](https://github.com/babel/babel-loader) are used with the [Babel-Preset-ES2015](https://www.npmjs.com/package/babel-preset-es2015-webpack) preset. This preset is used to enable code to be written in ES2015 (ES6) and compiled for browser support down to ES5.
 
 ### Build files for production
 When you're ready to minify production files, run the following in the theme's root:
