@@ -1,4 +1,4 @@
-<?php // Content Default ?>
+<?php // CONTENT ?>
 
 <div class="container">
 

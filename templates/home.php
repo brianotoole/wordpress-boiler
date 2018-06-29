@@ -1,10 +1,15 @@
-<?php /* Template Name: Home */ ?>
+<?php /* Template Name: Home */ 
 
-<?php get_header(); ?>
+// Header
+get_header(); 
 
-<?php
-// HERO
-get_template_part('template-parts/hero', 'home');
+// Hero
+get_template_part('template-parts/hero', '');
+
+// Content
+get_template_part('template-parts/content', '');
+
+// Footer
+get_footer(); 
+
 ?>
-
-<?php get_footer(); ?>
