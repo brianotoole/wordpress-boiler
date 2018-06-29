@@ -1,15 +1,15 @@
-<?php get_header(); ?>
+<?php // Index
 
-<div class="container">
-  <?php
-  if ( have_posts() ) :
-    while ( have_posts() ) :
-      the_post();
-      the_content();
-  ?>
-  <?php endwhile; else : ?>
+// Header
+get_header(); 
 
-  <?php endif; ?>
-</div>
+// Hero
+get_template_part('template-parts/hero', '');
 
-<?php get_footer(); ?>
+// Content
+get_template_part('template-parts/content', '');
+
+// Footer
+get_footer(); 
+
+?>
