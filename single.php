@@ -1,9 +1,15 @@
-<?php get_header(); ?>
+<?php // Single
 
-<?php get_template_part('template-parts/section','page-hero'); ?>
+// Header
+get_header(); 
 
-<div class="container content">
-  <?php get_template_part('template-parts/loop','content'); ?>
-</div>
+// Hero
+get_template_part('template-parts/hero', '');
 
-<?php get_footer(); ?>
+// Content
+get_template_part('template-parts/content', '');
+
+// Footer
+get_footer(); 
+
+?>
