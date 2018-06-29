@@ -1,8 +1,8 @@
-<section class="footer">
+<footer class="footer">
  <div class="container">
 
-  </div>
-</section>
+  </div><!--/.container-->
+</footer><!--/.footer>
 
  <?php wp_footer(); ?>
 </div><!--#page-->
