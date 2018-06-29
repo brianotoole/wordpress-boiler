@@ -2,7 +2,7 @@
  <div class="container">
 
   </div><!--/.container-->
-</footer><!--/.footer>
+</footer><!--/.footer-->
 
  <?php wp_footer(); ?>
 </div><!--#page-->
