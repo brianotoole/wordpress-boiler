@@ -59,7 +59,7 @@
         wp_nav_menu( array(
           //@NOTE: WP Menu must be added to "Mobile" location
           'theme_location'  => 'mobile',
-          'menu_class'      =>'',
+          'menu_class'      => 'nav-mobile__inner',
           'container'       => false,
         ) );
       ?>

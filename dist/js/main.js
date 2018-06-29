@@ -210,6 +210,7 @@ $(window).scroll(function () {}); // /.scroll
 
 
 // Nav
+
 var trigger = $('#js-nav-toggle');
 trigger.click(function () {
   $('#js-nav-mobile').toggleClass('nav-open');

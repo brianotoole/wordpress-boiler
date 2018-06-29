@@ -3,7 +3,7 @@
 *********************************************************/
 
 // GLOBAL
- require('./global/events.js');
+require('./global/events.js');
  
 // COMPONENTS
 // @TODO: convert to es6

@@ -915,6 +915,10 @@ pre {
     visibility: visible;
     transform: translateX(0); }
 
+.nav-mobile__inner {
+  width: auto;
+  height: 100vh; }
+
 .nav-mobile li a {
   display: block;
   width: 100%;
