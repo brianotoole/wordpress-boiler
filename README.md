@@ -3,11 +3,16 @@ A Wordpress theme boilerplate that follows BEM methodology and organizes assets 
 
 It provides a minimal, clean starting point for a WordPress theme. Specifically designed for better performance and higher productivity.
 
-## Features
+## Core Concepts
 * BEM methodology for scalable, maintable Sass
+* Only `theme` folder is version controlled, cutting out unncessary database/plugin conflicts. *NOTE*- Use Migrate DB Pro to manage database/plugin updates.
+
+## Features
+* BEM methodology for scalable, maintable Sass. Yes, this is a feature... [Here's why you should use BEM](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax).
 * Grid system is flexbox based for same-height boxes, reverse grid, equal spacing & more
 * Extendable, design-agnostic components to help get started, but not make design decisions
 * Webpack, with Autoprefixer and BrowserSync setup for workflow enhancement
+
 
 ## Typography
 Base-font-size uses the `rem` unit and is relative to the font-size of the root element `html`. That means that we can define a single font size on the root element, and define all `rem` units to be a percentage of that. The typography has font-size defined as a variable in `./global/_variables.scss` as `1rem`(16px), and line-height in 1.6 (24px). The default font-family Roboto, is provided by Google.
