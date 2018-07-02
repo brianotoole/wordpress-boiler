@@ -4,7 +4,8 @@ var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var config = {
   entry: ['./src/js/main.js', './src/scss/main.scss'],
   output: {
-    filename: 'dist/js/[name].js'
+    filename: 'dist/js/[name].js',
+    publicPath: '../../'
   },
   module: {
 
@@ -24,11 +25,11 @@ var config = {
         }
       },
       { // URL LOADER, IMAGE FILES
-        test: /\.(jpe?g|png|svg)/,
+        test: /\.(jpe?g|png)/,
         loader: 'url-loader?limit=10000&name=dist/img/[name].[ext]', //if < 10 kb, base64 encode img to css
       },
       { // URL LOADER, FONT FILES
-        test: /\.(woff|woff2|eot|ttf)/,
+        test: /\.(woff|woff2|eot|ttf|svg)/,
         loader: 'url-loader?limit=10000&name=dist/fonts/[name].[ext]', //font files to './dist/fonts/**.'
       },
     ]
