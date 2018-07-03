@@ -5,7 +5,7 @@ It provides a minimal, clean starting point for a WordPress theme. Specifically 
 
 ## Core Concepts
 * BEM methodology for scalable, maintable Sass
-* Only `theme` folder is version controlled, cutting out unncessary database/plugin conflicts. *NOTE*- Use Migrate DB Pro to manage database/plugin updates.
+* Only this theme's folder is version controlled, cutting out unncessary database/plugin conflicts. *NOTE*- Use Migrate DB Pro to manage database/plugin updates. Use [ACF-JSON](https://www.advancedcustomfields.com/resources/synchronized-json) to syncrhonize ACF field-groups, so you can version control ACF field-groups
 
 ## Features
 * BEM methodology for scalable, maintable Sass. Yes, this is a feature... [Here's why you should use BEM](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax).
@@ -38,10 +38,10 @@ Ships with a few design-agnostic components, such as:
 ## Mobile First
 Mobile First is the design strategy that takes priority development for mobile devices like smartphones and tablets. It means all styles outside of a media queries apply to all devices, then larger screens are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. This theme uses the concept of "larger than" when thinking about breakpoints. Below are the defined  breakpoints:
 
-* Larger than Mobile screen: 30rem (480px)
-* Larger than Mobile screen: 48rem (768px)
-* Larger than Tablet screen: 57.5rem (920px)
-* Larger than Desktop screen: 75rem (1200px)
+* Mobile: 30rem (480px)
+* Tablet: 48rem (768px)
+* Desktop: 57.5rem (920px)
+* Desktop-Wide: 75rem (1200px)
 
 ## Packages Included
 1. [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
@@ -113,16 +113,17 @@ To use the image within a stylesheet, use the relative path from the main entryp
 .section--has-bg { background: url('../img/bg-brick.png') 0 0 repeat; }
 ```
 
-### Build files for production
+## Build files for production
 When you're ready to minify production files, run the following in the theme's root:
 ``` bash
 npm run build
 ```
 
-This will run webpack's production build flag, `-p` to minify bundled files.
+This will run [webpack's production build flag](https://webpack.js.org/guides/production), `-p` to build bundled files.
 
 ## TODO
-- [ ] Include basic ACF data (options panel data)
-- [ ] Include base icon set (font icon? font awesome?)
+- [X] Include basic ACF data (options panel data, components)
+- [X] Include base icon set (font icon? font awesome?)
 - [ ] Create a better production build script: on run-script 'build prod', compress images + min assets, etc.
 - [ ] Add modernizr / setup basic fallback classes for IE
+- [ ] Lazyload images
