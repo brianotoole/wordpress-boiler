@@ -13,7 +13,7 @@ var config = {
       { // STYLE LOADERS
         test: /\.(css|sass|scss)$/,
         use: ExtractText.extract({
-          use: ['css-loader', 'sass-loader'],
+          use: ['css-loader', 'postcss-loader', 'sass-loader'],
         })
       },
       { // SCRIPT LOADERS
