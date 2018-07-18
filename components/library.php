@@ -27,16 +27,22 @@ if( have_rows('component_library') ):
 
     <?php // Component: Basic Content ?>
     <?php if( get_row_layout() == 'component_basic_content' ): ?>
-    <div class="component component-basic-content">
+    <div class="component component--basic-content">
       <?php get_template_part( 'components/basic-content' ); ?>
     </div>
 
     <?php // Component: Alternating Content ?>     
     <?php elseif( get_row_layout() == 'component_alt_content' ): ?>
-    <div class="module module-alt-content">
+    <div class="component component--alt-content">
       <?php 
         set_query_var('alt_class', $alt_class); //needed to pass $var to component file
         get_template_part( 'components/alt-content'); ?>
+    </div>
+
+    <?php // Component: Callout Content ?>     
+    <?php elseif( get_row_layout() == 'component_callout_content' ): ?>
+    <div class="component component--callout-content">
+      <?php get_template_part( 'components/callout'); ?>
     </div>
 
 
