@@ -26,12 +26,12 @@
     "url-loader": "^1.0.1",
     "webpack-cli": "^3.1.0"
   },
+  "dependencies": {
+    "webpack": "^4.16.1"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "dependencies": {
-    "webpack": "^4.16.1"
-  }
+  ]
 }
