@@ -1,6 +1,6 @@
 {
     "key": "group_5b3596e5b6557",
-    "title": "Component: Hero",
+    "title": "Layout: Hero",
     "fields": [
         {
             "key": "field_5b35970c45263",
@@ -68,7 +68,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/about.php"
+                "value": "default"
             }
         ],
         [
@@ -94,5 +94,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1530238991
+    "modified": 1531928688
 }

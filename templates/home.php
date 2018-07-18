@@ -6,8 +6,8 @@ get_header();
 // Hero
 get_template_part('template-parts/hero', '');
 
-// Content
-get_template_part('template-parts/content', '');
+// Flexible Component Library
+get_template_part('components/library', '');
 
 // Footer
 get_footer(); 
