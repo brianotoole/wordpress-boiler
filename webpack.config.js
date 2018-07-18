@@ -4,7 +4,7 @@ var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var config = {
   entry: ['./src/js/main.js', './src/scss/main.scss'],
   output: {
-    filename: 'dist/js/[name].js',
+    filename: 'js/[name].js',
     publicPath: '../../'
   },
   module: {
@@ -36,7 +36,7 @@ var config = {
   },
   plugins: [
     new ExtractText({
-      filename: 'dist/css/[name].css',
+      filename: 'css/[name].css',
       allChunks: true,
     }),
     new BrowserSyncPlugin({

@@ -1,7 +1,7 @@
 # Wordpress Theme Boilerplate
 A Wordpress theme boilerplate that follows BEM methodology and organizes assets using an SMACSS approach. It comes with Webpack that includes BrowserSync for auto-reloading / proxing a server, Babel for writing ES6-based javascript modules (if needed), Autoprefixer for cross-browser compatibility, and uses SCSS as the main loader for styles.
 
-It provides a minimal, clean starting point for a WordPress theme. Specifically designed for better performance and higher productivity.
+It provides a minimal, clean starting point for a WordPress theme. Specifically designed for better team performance and higher productivity.
 
 ## Core Concepts
 * BEM methodology for scalable, maintable Sass
@@ -44,13 +44,15 @@ Mobile First is the design strategy that takes priority development for mobile d
 * Desktop-Wide: 75rem (1200px)
 
 ## Packages Included
-1. [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
+1. Webpack 4
+
+2. [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
 will use the data based on current browser popularity and property support to automatically apply prefixes. This requires the [postcss-loader](https://github.com/postcss/postcss-loader) loader to be installed & used within `webpack.config.js` file. This is already setup and includes the `postcss.config` file needed to work. See the postcss-loader [documentation](https://github.com/postcss/postcss-loader) for dealing with browser support / options.
 
-2. [BrowserSync](https://www.npmjs.com/package/browser-sync-webpack-plugin): 
+3. [BrowserSync](https://www.npmjs.com/package/browser-sync-webpack-plugin): 
 This boiler is using BrowserSync to serve the project and Webpack Dev Server is not needed. The setup is pretty easy: just pass the BrowserSync options to the plugin as the first argument within the `webpack.config.js` file.
 
-3. Babel: [babel-core](https://github.com/babel/babel-loader) and [babel-loader](https://github.com/babel/babel-loader) are used with the [Babel-Preset-ES2015](https://www.npmjs.com/package/babel-preset-es2015-webpack) preset. This preset is used to enable code to be written in ES2015 (ES6) and compiled for browser support down to ES5.
+4. Babel: [babel-core](https://github.com/babel/babel-loader) and [babel-loader](https://github.com/babel/babel-loader) are used with the [Babel-Preset-ES2015](https://www.npmjs.com/package/babel-preset-es2015-webpack) preset. This preset is used to enable code to be written in ES2015 (ES6) and compiled for browser support down to ES5.
 
 ## Requirements
 To use everything this theme ships with, you need the following installed on your machine:
@@ -114,12 +116,7 @@ To use the image within a stylesheet, use the relative path from the main entryp
 ```
 
 ## Build files for production
-When you're ready to minify production files, run the following in the theme's root:
-``` bash
-npm run build
-```
-
-This will run [webpack's production build flag](https://webpack.js.org/guides/production), `-p` to build bundled files.
+@TODO - Webpack 4 requires you to specify the mode for running webpack (development or produciton). Need to seperate out development and production config files and create scripts to run for each.
 
 ## TODO
 - [X] Include basic ACF data (options panel data, components)
@@ -127,3 +124,4 @@ This will run [webpack's production build flag](https://webpack.js.org/guides/pr
 - [ ] Create a better production build script: on run-script 'build prod', compress images + min assets, etc.
 - [ ] Add modernizr / setup basic fallback classes for IE
 - [ ] Lazyload images
+- [ ] Create specific development and production webpack config files
