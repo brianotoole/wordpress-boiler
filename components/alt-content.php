@@ -18,11 +18,11 @@ $content = get_sub_field('alt_content_text');
       <h3 class="alt-content__title title-top u-text-center">
         <?= $title; ?>
       </h3>
-      <div class="alt-content__scroll">
+      <!--<div class="alt-content__scroll">
         <div class="alt-content__scroll-down">
           <div class="alt-content__scroll-down-line"></div>
         </div>
-      </div>
+      </div>-->
     <?php endif; ?>
   <?php endif; ?>
   <div class="alt-content-row row <?php if ($alt_class == 'even') echo 'reverse '; ?>between-xs">
@@ -33,12 +33,12 @@ $content = get_sub_field('alt_content_text');
             <h3 class="alt-content__title heading__dash heading__dash--visible-desktop">
               <?= $title; ?>
             </h3>
-            <div class="alt-content__scroll">
+            <!--<div class="alt-content__scroll">
               <div class="alt-content__scroll-down">
                 <div class="alt-content__scroll-down-line"></div>
               </div>
             </div>
-          </div>
+          </div>-->
         <?php endif; ?>
       <?php endif; ?>
       <div class="alt-content__text--copy">

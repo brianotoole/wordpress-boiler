@@ -12,11 +12,11 @@ $content = get_sub_field('basic_content_text');
     <h3 class="basic-content__title u-text-center">
       <?php echo $title; ?>
     </h3>
-    <div class="basic-content__scroll">
+    <!--<div class="basic-content__scroll">
       <div class="basic-content__scroll-down">
         <div class="basic-content__scroll-down-line"></div>
       </div>
-    </div>
+    </div>-->
   <?php endif; ?>
   <div class="basic-content__block">
     <div class="basic-content__text">
