@@ -2,11 +2,13 @@
   "name": "",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "main.js",
   "repository": "",
   "scripts": {
     "dev": "webpack --watch --mode development",
-    "build": "webpack -p --progress --hide-modules"
+    "build": "webpack -p --progress --hide-modules",
+    "parcel-dev": "parcel ./src/js/main.js ./src/scss/main.scss --no-cache",
+    "parcel-build": "parcel build ./src/js/main.js ./src/scss/main.scss --no-cache"
   },
   "keywords": [],
   "author": "",

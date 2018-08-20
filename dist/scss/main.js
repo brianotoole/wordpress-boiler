@@ -103,161 +103,73 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"js/global/events.js":[function(require,module,exports) {
-/**
- * -- EVENTS
- */
-
-//import { fitText } from "./components/fit-text";
-
-/**
-  * These functions execute in order.
-  */
-(function () {})();
-
-/**
-  * Events that fire when the page is loaded.
-  */
-$(document).ready(function () {
-  /*
-  $('.carousel').slick({
-    adaptiveHeight: true
-  });
-  */
-}); // /.ready
-
-
-/**
- * Events that fire on Window Scroll
- */
-$(window).scroll(function () {}); // /.scroll
-},{}],"js/components/nav.js":[function(require,module,exports) {
-// Nav
-
-var trigger = $('#js-nav-toggle');
-trigger.click(function () {
-  $('#js-nav-mobile').toggleClass('nav-open');
-  $('#js-nav-toggle').toggleClass('active');
-  $('body').toggleClass('nav-open');
-});
-},{}],"js/components/social-sharing.js":[function(require,module,exports) {
-/**
-  * Social Sharing Links
-  */
-$('.js-social-share').click(function (e) {
-  // we're not going to go to the link, just pull data from it
-  e.preventDefault();
-
-  // decide what social share url string to use based on 'data-social' value
-  var social = $(this).data('social');
-
-  // pull the a href value
-  var url = $(this).attr('href');
-  // pop window parameters
-  var window_args = "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600";
-  var share_link = void 0;
-
-  if (url === '' || url === '#') {
-    url = window.location.href;
+})({"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
   }
 
-  if (social === 'facebook') {
-    share_link = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-  } else if (social === 'twitter') {
-    share_link = "https://twitter.com/intent/tweet?url=" + url;
-  } else {
-    share_link = "https://www.linkedin.com/shareArticle?mini=true&url=" + url;
-  }
+  return bundleURL;
+}
 
-  window.open(share_link, "", window_args);
-});
-},{}],"js/components/modal.js":[function(require,module,exports) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/**
-  * MODAL
-  */
-
-var Modal = function () {
-  function Modal() {
-    _classCallCheck(this, Modal);
-
-    this.modalTrigger = $('.js-modal-trigger');
-    this.modal = $('.modal');
-    this.modalClose = $('.modal__close');
-    this.events();
-  }
-
-  _createClass(Modal, [{
-    key: 'events',
-    value: function events() {
-      // click on open modal
-      this.modalTrigger.click(this.openModal.bind(this)); //bind 'this' keyword to what it is set to
-
-      // click on x close btn
-      this.modalClose.click(this.closeModal.bind(this));
-
-      // keyup event
-      $(document).keyup(this.keyPressHandler.bind(this));
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+    if (matches) {
+      return getBaseURL(matches[0]);
     }
-  }, {
-    key: 'keyPressHandler',
-    value: function keyPressHandler(e) {
-      if (e.keyCode == 27) {
-        this.closeModal();
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    link.remove();
+  };
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
       }
     }
-  }, {
-    key: 'openModal',
-    value: function openModal() {
-      this.modal.addClass('modal--is-open');
-      return false; //prevent default behavior of link click
-    }
-  }, {
-    key: 'closeModal',
-    value: function closeModal() {
-      this.modal.removeClass('modal--is-open');
-    }
-  }]);
 
-  return Modal;
-}(); //Modal
+    cssTimeout = null;
+  }, 50);
+}
 
-exports.default = Modal;
-},{}],"js/main.js":[function(require,module,exports) {
-'use strict';
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/main.scss":[function(require,module,exports) {
 
-var _modal = require('./components/modal');
-
-var _modal2 = _interopRequireDefault(_modal);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/*********************************************************
-  Main JS Entry Point
-*********************************************************/
-
-// GLOBAL
-require('./global/events.js');
-
-// COMPONENTS
-// @TODO: convert to es6
-require('./components/nav.js');
-require('./components/social-sharing.js');
-
-var modal = new _modal2.default();
-
-// TEMPLATES
-//require('./templates/about.js');
-},{"./global/events.js":"js/global/events.js","./components/nav.js":"js/components/nav.js","./components/social-sharing.js":"js/components/social-sharing.js","./components/modal":"js/components/modal.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -427,5 +339,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/main.js"], null)
-//# sourceMappingURL=/main.map
+},{}]},{},["../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
